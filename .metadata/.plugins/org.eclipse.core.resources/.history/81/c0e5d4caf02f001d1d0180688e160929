@@ -24,7 +24,6 @@ public class LandingPage {
 	}
 	
 	public void getStarted() {
-		//Clicking on Button get Started
 		getStartedButton.click();
 	
 	}

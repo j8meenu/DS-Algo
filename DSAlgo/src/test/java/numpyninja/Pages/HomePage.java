@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage  {
 	WebDriver driver;
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -27,8 +27,8 @@ public static void dropdown() {
 try {
 	dropdown.click();
 	arraybutton.click();
-    String alert= alertmessage.getText();
-    System.out.println("Alert:" + alert);
+String alert= alertmessage.getText();
+ System.out.println("Alert:" + alert);
 	arraygetstarted.click();
 	String alert1=alertmessage1.getText();
 	System.out.println("AlertMessage:" + alert1);

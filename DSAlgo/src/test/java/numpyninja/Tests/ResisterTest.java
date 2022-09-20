@@ -1,6 +1,6 @@
 package numpyninja.Tests;
 
-<<<<<<< HEAD
+
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
@@ -14,8 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.RegisterPage;
 
-=======
->>>>>>> 466bc3b924ea5f80d7992feec4715bcaa6d1a8aa
+
 public class ResisterTest extends BaseTest {
 	
 	 WebDriver driver;

@@ -44,14 +44,7 @@ public class HomeTest  {
 	   	else { System.out.println("you are  logged in"); }
 	}
 	
-//	@Test(priority=1)
-//	public void GetStartedValid() {
-//		
-//		home=new HomePage(driver);
-//		home.getstartedclick();
-//		
-		
-	//}
+
 	@Test(priority=1)
 	public void DSgetstarted() {
 	home=new HomePage(driver);

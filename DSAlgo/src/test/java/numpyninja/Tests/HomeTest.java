@@ -33,8 +33,7 @@ public class HomeTest  {
 	
 	@Test(priority=0)
 	public void dropdownclick() {
-		//Homepage page=new Homepage(driver);
-		//		page.dropdown();
+		
 		home=new HomePage(driver);
 		home.dropdown();
 		String actualurl= "https://dsportalapp.herokuapp.com/home";

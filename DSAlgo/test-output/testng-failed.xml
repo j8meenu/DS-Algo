@@ -5,7 +5,8 @@
     <classes>
       <class name="numpyninja.Tests.HomeTest">
         <methods>
-          <include name="dropdownclick"/>
+          <include name="DSgetstarted"/>
+          <include name="beforetest"/>
         </methods>
       </class> <!-- numpyninja.Tests.HomeTest -->
     </classes>

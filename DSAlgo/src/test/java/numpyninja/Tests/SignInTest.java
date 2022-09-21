@@ -1,18 +1,7 @@
 package numpyninja.Tests;
 
-import static org.testng.Assert.assertEquals;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import numpyninja.Pages.SignInPage;
-
 public class SignInTest {
+	 
 	WebDriver driver;
 	 SignInPage SignIn;
 	 String Uname = "Nenyarajesh";
@@ -44,7 +33,7 @@ public class SignInTest {
 			       	SignIn.clickLogin();
 			       	String actualUrl= "https://dsportalapp.herokuapp.com/home";
 			       	String expectedUrl= driver.getCurrentUrl();
-			       	assertEquals(actualUrl, expectedUrl);
+			       	Assert.assertEquals(actualUrl, expectedUrl);
 			       	if(actualUrl.equalsIgnoreCase(expectedUrl)) { 
 			       		System.out.println("Test passed"); }
 			       	else { System.out.println("Invalid credentials"); }

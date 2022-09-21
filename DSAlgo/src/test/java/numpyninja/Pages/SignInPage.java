@@ -7,11 +7,9 @@ public class SignInPage {
 		public WebDriver driver;
 		@FindBy(id ="id_username")  WebElement uid;
 	    @FindBy(id ="id_password")  WebElement pwd;
-   //@FindBy(xpath = "//div[contains(text(),'Invalid')]")  WebElement alertMsg;
-  //@FindBy(xpath ="//div[contains(text(),'logged')]") WebElement SignInAlert;
    @FindBy(xpath ="//input[@type='submit']") WebElement LoginButton;;
    @FindBy(xpath="//a[contains(text(),'Sign out')]") WebElement Logout;
-	
+     
     public SignInPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -42,17 +40,9 @@ public class SignInPage {
       	String pwdtextbox = pwd.getAttribute("validationMessage");
      	 return pwdtextbox;
        }
-    public void Invalidcredentials(String errname, String errpwd) {
-      	 
-      	 uid.sendKeys(errname);
-      	 uid.clear();
-      	 pwd.sendKeys(errpwd);
-      	 pwd.clear();
-       }
-        public void login(String strUserName,String strPassword){
+    public void login(String strUserName,String strPassword){
         uid.sendKeys(strUserName);
-        pwd.sendKeys(strPassword);     
-        //this.clickLogin(); 
-        }
+        pwd.sendKeys(strPassword); 
+       }
     
 }		

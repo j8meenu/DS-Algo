@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-09-20T13:24:38 EDT" name="Default suite" finished-at="2022-09-20T13:24:45 EDT" duration-ms="7216">
     <groups>
     </groups>
@@ -52,6 +53,18 @@
           </reporter-output>
         </test-method> <!-- RegisterValidation -->
       </class> <!-- numpyninja.Tests.HomeTest -->
+=======
+  <suite started-at="2022-09-21T13:28:53 EDT" name="Default suite" finished-at="2022-09-21T13:28:56 EDT" duration-ms="2971">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T13:28:53 EDT" name="Default test" finished-at="2022-09-21T13:28:56 EDT" duration-ms="2971">
+      <class name="numpyninja.Tests.LandingPageTest">
+        <test-method signature="goToPage()[pri:0, instance:numpyninja.Tests.LandingPageTest@5be46f9d]" started-at="2022-09-21T13:28:53 EDT" name="goToPage" finished-at="2022-09-21T13:28:56 EDT" duration-ms="2874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPage -->
+      </class> <!-- numpyninja.Tests.LandingPageTest -->
+>>>>>>> meenu
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

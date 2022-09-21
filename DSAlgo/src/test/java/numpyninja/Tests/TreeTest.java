@@ -1,5 +1,15 @@
 package numpyninja.Tests;
 
-public class TreeTest {
+import org.testng.annotations.Test;
 
+import numpyninja.Base.BaseTest;
+
+public class TreeTest extends BaseTest {
+
+	@Test
+	public void clickGetStartedTreee() {
+		SignInTest signIn = new SignInTest();	
+	}
+	
+	
 }

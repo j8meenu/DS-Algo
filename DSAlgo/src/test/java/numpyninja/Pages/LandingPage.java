@@ -28,5 +28,9 @@ public class LandingPage {
 		getStartedButton.click();
 	
 	}
+	
+	public String getTitle() {
+		return driver.getTitle();
+	}
 
 }

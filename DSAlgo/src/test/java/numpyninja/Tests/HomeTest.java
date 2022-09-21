@@ -1,9 +1,8 @@
 package numpyninja.Tests;
 
-<<<<<<< HEAD
-=======
+
 import java.io.IOException;
->>>>>>> 466bc3b924ea5f80d7992feec4715bcaa6d1a8aa
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -12,13 +11,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-<<<<<<< HEAD
+
 import numpyninja.Pages.HomePage;
-=======
+
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
->>>>>>> 466bc3b924ea5f80d7992feec4715bcaa6d1a8aa
 
 public class HomeTest  {
 	

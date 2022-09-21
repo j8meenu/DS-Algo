@@ -50,21 +50,15 @@ public class SignInTest {
 			       	if(actualUrl.equalsIgnoreCase(expectedUrl)) { 
 			       		System.out.println("Test passed"); }
 			       	else { System.out.println("Invalid credentials"); }
-<<<<<<< HEAD
+
 
 			       	SignIn.clicklogout();
 
-=======
-			       	SignIn.clicklogout();
->>>>>>> 466bc3b924ea5f80d7992feec4715bcaa6d1a8aa
 			       }
 			       			      
 			       @AfterTest
 			       public void logout() {
-<<<<<<< HEAD
 
-=======
->>>>>>> 466bc3b924ea5f80d7992feec4715bcaa6d1a8aa
 			    	 	driver.close();
 			       }
 

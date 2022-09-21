@@ -25,3 +25,43 @@
 2022-09-20 11:59:13,479 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
 2022-09-20 11:59:13,480 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-20 11:59:13,481 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-20 12:01:54,868 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:01:54,868 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-20 12:01:54,869 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:01:54,869 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-20 12:01:55,935 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:01:55,935 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-20 12:01:55,936 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:01:55,936 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-20 12:02:41,530 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:02:41,530 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-20 12:02:41,531 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:02:41,531 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-20 12:03:21,521 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:03:21,522 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-20 12:03:21,523 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:03:21,523 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-20 12:04:01,061 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:04:01,061 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-20 12:04:01,062 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-20 12:04:01,062 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-21 11:02:42,243 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 11:02:42,246 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-21 11:02:42,247 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 11:02:42,247 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-21 11:06:39,500 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 11:06:39,501 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-21 11:06:39,501 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 11:06:39,501 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-21 13:10:35,628 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:10:35,629 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-21 13:10:35,629 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:10:35,630 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-21 13:13:26,752 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:13:26,752 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-21 13:13:26,753 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:13:26,753 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources
+2022-09-21 13:14:27,090 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:14:27,090 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\main\resources
+2022-09-21 13:14:27,091 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-21 13:14:27,091 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\DSAlgo\src\test\resources

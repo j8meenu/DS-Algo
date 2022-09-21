@@ -1,5 +1,9 @@
 package numpyninja.Tests;
 
+
+
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -9,13 +13,13 @@ import numpyninja.Pages.LandingPage;
 
 public class LandingPageTest extends BaseTest {
 	
+	
 	@Test
 	public void goToPage() throws IOException {
-		
-		LandingPage landingPage = launchApplication(); 
+				
+		LandingPage landingPage = this.launchApplication();
 		landingPage.getStarted();
+		assertEquals(landingPage.getTitle(), this.expectedTitleLandingPage);
 		
 	}
-	
-	
 }

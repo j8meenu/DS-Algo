@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.HomeTest">
+      <class name="numpyninja.Tests.LinkedListTest">
         <methods>
-          <include name="DSgetstarted"/>
-          <include name="beforetest"/>
+          <include name="creatingLinkedList"/>
+          <include name="setUp"/>
+          <include name="deletion"/>
+          <include name="implementLinkedList"/>
         </methods>
-      </class> <!-- numpyninja.Tests.HomeTest -->
+      </class> <!-- numpyninja.Tests.LinkedListTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

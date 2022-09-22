@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage  {
-	static WebDriver driver;
+	 WebDriver driver;
+	
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -76,7 +77,7 @@ public static void getstartedGraphclick() {
 
 public static void signinvalidation() {
 	signinbutton.click();
-	driver.navigate().back();
+	//driver.navigate().back();
 	
 }
 public static void registervalidation() {

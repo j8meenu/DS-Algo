@@ -17,21 +17,35 @@ import numpyninja.Pages.DataStructurePage;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 
-public class HomeTest  {
+public class HomeTest extends BaseTest {
 	
-	WebDriver driver;
+	//WebDriver driver;
 	HomePage home;
-	DataStructurePage ds;
-	
+	//BaseTest base;
+	LandingPage lp;
 	@BeforeTest
-	public void beforetest() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("https://dsportalapp.herokuapp.com/home");
+	public void beforetest() throws IOException {
+		
+		initDriver();
+		driver.get(baseUrl);
+		lp=new LandingPage(driver);
+		lp.getStarted();
+		//WebDriverManager.chromedriver().setup();
+		//driver = new ChromeDriver();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.get("https://dsportalapp.herokuapp.com/home");
+		//driver.manage().window().maximize();
+		//base=new BaseTest();
+		//base.initDriver();
+
 	}
-	
-	@Test(priority=0)
+//	@Test(priority=0)
+//	public void launchweb() throws IOException {
+//		
+//		base=new BaseTest();
+//		base.launchApplication();
+//	}
+	@Test(priority=1)
 	public void dropdownclick() {
 		
 		home=new HomePage(driver);
@@ -44,15 +58,8 @@ public class HomeTest  {
 	   	else { System.out.println("you are  logged in"); }
 	}
 	
-//	@Test(priority=1)
-//	public void GetStartedValid() {
-//		
-//		home=new HomePage(driver);
-//		home.getstartedclick();
-//		
-		
-	//}
-	@Test(priority=1)
+
+	@Test(priority=2)
 	public void DSgetstarted() {
 	home=new HomePage(driver);
 	home.getstartedDatastructureclick();;
@@ -65,51 +72,51 @@ public class HomeTest  {
 
 		
 	}
-	@Test(priority=2)
+	@Test(priority=3)
 	public void Arraygetstarted() {
 	home=new HomePage(driver);
 	home.getStartedArrayClick();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=4)
 	public void linkedListgetstarted() {
 	home=new HomePage(driver);
 	home.getstartedLinkedlistclick();
 	}
 	
-	@Test(priority=4)
+	@Test(priority=5)
 	public void stackGetstarted() {
 	home=new HomePage(driver);
 	home.getstartedStackclick();
 	}
 	
-	@Test(priority=5)
+	@Test(priority=6)
 	public void queueGetstarted() {
 	home=new HomePage(driver);
 	home.getstartedQueueclick();
 	}
 	
-	@Test(priority=6)
+	@Test(priority=7)
 	public void treeGetstarted() {
 	home=new HomePage(driver);
 	home.getstartedTreeclick();
 	}
 	
 	
-	@Test(priority=7)
+	@Test(priority=8)
 	public void graphGetstarted() {
 	home=new HomePage(driver);
 	home.getstartedGraphclick();
 	}
 	
 		
-	@Test(priority=8)
+	@Test(priority=9)
 	public void SigninValidation() {
 		home= new HomePage(driver);
 		home.signinvalidation();
 		
 	}
-	@Test(priority=9)
+	@Test(priority=10)
 	public void RegisterValidation() {
 		home= new HomePage(driver);
 		home.registervalidation();

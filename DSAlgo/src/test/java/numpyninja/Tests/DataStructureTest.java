@@ -80,8 +80,8 @@ public void TryHere() {
 public void TryEditor() {
 	ds.TryEditorClick();
 	driver.navigate().back();
-	String title = driver.getTitle();
-   	assertTrue(true, title);
+	//String title = driver.getTitle();
+   	//assertTrue(true, title);
 }
 
 }

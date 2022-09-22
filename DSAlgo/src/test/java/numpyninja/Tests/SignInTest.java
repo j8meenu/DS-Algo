@@ -26,7 +26,7 @@ public class SignInTest {
 			 @Test
 			       public void dslogin() {
 			    	   SignIn =new SignInPage(driver);
-			    	   String xl ="./src/test/resources/Excel/SignInTest.xlsx";
+			    	   String xl ="./src/test/java/Excel/SignInTest.xlsx";
 			           String Sheet = "Login";
 			          int rowCount = 5;
 			          String Uname = ""; 

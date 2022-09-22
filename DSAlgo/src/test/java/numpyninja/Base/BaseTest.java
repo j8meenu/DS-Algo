@@ -27,7 +27,7 @@ public class BaseTest {
 		public WebDriver initDriver() throws IOException {
 			
 			Properties prop = new Properties();
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//java//dsalgo//Resources//config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("./src/test/java/numpyninja.Resources/config.properties"));
 			prop.load(fis);
 			browserName = prop.getProperty("browser");
 			

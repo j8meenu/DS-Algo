@@ -1,11 +1,7 @@
 INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.plugins\org.eclipse.jdt.core
-<<<<<<< HEAD
 765607700.index
-3667553180.index
-<<<<<<< Updated upstream
+1545490273.index
 1865797976.index
-=======
->>>>>>> Stashed changes
 2619877255.index
 1771921474.index
 2808290642.index
@@ -37,13 +33,8 @@ INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.pl
 3612714434.index
 2530793233.index
 3404845258.index
-<<<<<<< Updated upstream
 2932520562.index
 2602265184.index
-=======
-2602265184.index
-2932520562.index
->>>>>>> Stashed changes
 197584677.index
 2464913642.index
 3024766462.index
@@ -62,15 +53,9 @@ INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.pl
 1831748603.index
 3092450899.index
 3970510563.index
-<<<<<<< Updated upstream
-129445225.index
-1958638197.index
-424879143.index
-=======
 1958638197.index
 424879143.index
 129445225.index
->>>>>>> Stashed changes
 884935440.index
 3391578705.index
 479779158.index
@@ -101,8 +86,23 @@ INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.pl
 3138457999.index
 3656962724.index
 4209693700.index
-=======
->>>>>>> 15e2db40ee77c29349e2ef4c74e7e5932171614c
 1991655398.index
-129445225.index
-1865797976.index
+1940885398.index
+3813360916.index
+2699305802.index
+4162642942.index
+2528292155.index
+546085690.index
+1106775515.index
+3888019372.index
+2296911799.index
+3393155640.index
+654321995.index
+2897812926.index
+95755343.index
+1126738246.index
+3367422976.index
+1397992678.index
+3938546559.index
+2019937317.index
+3667553180.index

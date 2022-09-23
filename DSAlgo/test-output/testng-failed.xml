@@ -3,21 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.ArrayTest">
+      <class name="numpyninja.Tests.LandingPageTest">
         <methods>
-          <include name="beforetest"/>
-          <include name="FindNumbersClick"/>
-          <include name="PracticequestionsClick"/>
-          <include name="ArraysusinglistClick"/>
-          <include name="BasicoperationsClick"/>
-          <include name="SearchTheArrayClick"/>
-          <include name="MaxConsecutiveOnesClick"/>
-          <include name="SquaresTabClick"/>
-          <include name="ArraysInPythonClick"/>
-          <include name="introArrayPage"/>
-          <include name="ApplicationofarraysClick"/>
+          <include name="goToPage"/>
         </methods>
-      </class> <!-- numpyninja.Tests.ArrayTest -->
+      </class> <!-- numpyninja.Tests.LandingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

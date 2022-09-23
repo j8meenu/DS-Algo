@@ -19,7 +19,7 @@ public class LandingPageTest extends BaseTest {
 				
 		LandingPage landingPage = this.launchApplication();
 		landingPage.getStarted();
-		assertEquals(landingPage.getTitle(), this.expectedTitleLandingPage);
+		assertEquals(landingPage.getTitle(),"NumpyNinja");
 		
 	}
 }

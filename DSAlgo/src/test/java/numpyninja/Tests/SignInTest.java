@@ -1,5 +1,7 @@
 package numpyninja.Tests;
 import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import numpyninja.Base.BaseTest;
 import numpyninja.Pages.SignInPage;
 import numpyninja.util.ExcelReader;
 
@@ -23,18 +26,20 @@ import org.testng.annotations.Test;
 
 import numpyninja.Pages.SignInPage;
 
-public class SignInTest {
+public class SignInTest extends BaseTest {
 	
-	 WebDriver driver;
+	 //WebDriver driver;
 	 SignInPage SignIn;  
 	 @BeforeTest		  
-		public void SignIn()  {
+		public void SignIn() throws IOException  {
+	    initDriver();
+	    driver.get(loginUrl);
 	    
-		 WebDriverManager.chromedriver().setup();
-		    driver= new ChromeDriver();
-	    driver.get("https://dsportalapp.herokuapp.com/login");
-	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		 WebDriverManager.chromedriver().setup();
+//		    driver= new ChromeDriver();
+//	    driver.get("https://dsportalapp.herokuapp.com/login");
+//	    driver.manage().window().maximize();
+//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	  } 
 			 @Test
 			       public void dslogin() {

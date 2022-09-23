@@ -23,7 +23,7 @@ public class DataStructureTest extends BaseTest {
 	//WebDriver driver;
 	DataStructurePage ds;
 	HomePage home;
-	SignInPage signin;
+	SignInPage SignIn;
 	BaseTest base;
 	@BeforeTest
 	public void beforetest() throws IOException {
@@ -40,9 +40,9 @@ public class DataStructureTest extends BaseTest {
 		public void introDatastructure() {
 		home=new HomePage(driver);
 	home.signinvalidation();
-		signin=new SignInPage(driver);
-		signin.login("Nenyarajesh", "Pinky1213");
-	signin.clickLogin();
+	SignIn=new SignInPage(driver);
+		SignIn.login(UserName, Password);
+		SignIn.clickLogin();
 	home.getstartedDatastructureclick();
 	String title = driver.getTitle();
    	assertTrue(true, title);
@@ -80,8 +80,10 @@ public void TryHere() {
 public void TryEditor() {
 	ds.TryEditorClick();
 	driver.navigate().back();
-	//String title = driver.getTitle();
-   	//assertTrue(true, title);
+	driver.navigate().back();
+	driver.navigate().back();
+	String title = driver.getTitle();
+   	assertTrue(true, title);
 }
 
 }

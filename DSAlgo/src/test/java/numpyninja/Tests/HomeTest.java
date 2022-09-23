@@ -23,6 +23,7 @@ public class HomeTest extends BaseTest {
 	HomePage home;
 	//BaseTest base;
 	LandingPage lp;
+	
 	@BeforeTest
 	public void beforetest() throws IOException {
 		
@@ -30,6 +31,7 @@ public class HomeTest extends BaseTest {
 		driver.get(baseUrl);
 		lp=new LandingPage(driver);
 		lp.getStarted();
+		
 		//WebDriverManager.chromedriver().setup();
 		//driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

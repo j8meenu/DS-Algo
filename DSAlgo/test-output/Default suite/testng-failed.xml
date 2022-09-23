@@ -3,30 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="numpyninja.Tests.LinkedListTest">
-=======
-<<<<<<< HEAD
-      <class name="numpyninja.Tests.HomeTest">
->>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+      <class name="numpyninja.Tests.ArrayTest">
         <methods>
-          <include name="creatingLinkedList"/>
-          <include name="setUp"/>
-          <include name="deletion"/>
-          <include name="implementLinkedList"/>
+          <include name="beforetest"/>
+          <include name="FindNumbersClick"/>
+          <include name="PracticequestionsClick"/>
+          <include name="ArraysusinglistClick"/>
+          <include name="BasicoperationsClick"/>
+          <include name="SearchTheArrayClick"/>
+          <include name="MaxConsecutiveOnesClick"/>
+          <include name="SquaresTabClick"/>
+          <include name="ArraysInPythonClick"/>
+          <include name="introArrayPage"/>
+          <include name="ApplicationofarraysClick"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- numpyninja.Tests.LinkedListTest -->
-=======
-      </class> <!-- numpyninja.Tests.HomeTest -->
-=======
-      <class name="numpyninja.Tests.LandingPageTest">
-        <methods>
-          <include name="goToPage"/>
-        </methods>
-      </class> <!-- numpyninja.Tests.LandingPageTest -->
->>>>>>> meenu
->>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+      </class> <!-- numpyninja.Tests.ArrayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

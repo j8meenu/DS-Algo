@@ -20,7 +20,7 @@ public class QueuePage {
 		queuelink.click();
         }
 	public void impqueuebypython(){
-		 driver.navigate().back();
+		 //driver.navigate().back();
 		WebElement impqueuebypythonlink = driver.findElement(By.xpath("//a[@href='implementation-lists']"));
 		impqueuebypythonlink.click();
         }
@@ -46,8 +46,7 @@ public class QueuePage {
 		queueoperations.click();
         }
 	public void practice(){
-		driver.navigate().back();
-		WebElement practicequestions = driver.findElement(By.xpath("//a[@href='/queue/practice']"));
+				WebElement practicequestions = driver.findElement(By.xpath("//a[@href='/queue/practice']"));
 		practicequestions.click();
         }
 }

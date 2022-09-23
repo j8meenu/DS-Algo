@@ -27,7 +27,11 @@ public class BaseTest {
 		public WebDriver initDriver() throws IOException {
 			
 			Properties prop = new Properties();
+<<<<<<< HEAD
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\numpyninja\\Resources\\config.properties");
+=======
+			FileInputStream fis = new FileInputStream(System.getProperty("./src/test/java/numpyninja.Resources/config.properties"));
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 			prop.load(fis);
 			browserName = prop.getProperty("browser");
 			

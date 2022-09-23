@@ -4,49 +4,59 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Pages.LandingPage;
-
+import numpyninja.util.ReadConfig;
 
 public class BaseTest {
 	
-	private WebDriver driver;
-	private String browserName;
-	public String expectedTitleLandingPage = "NumpyNinja";
-	
-	public WebDriver initDriver() throws IOException {
+	ReadConfig readConfig = new ReadConfig();
+	public String baseUrl =readConfig.getApplication();
+	public String UserName = readConfig.getUserName();
+	public String Password = readConfig.getPassword();
+	public String loginUrl = readConfig.getLoginUrl();
+	public String homeUrl = readConfig.gethomeUrl();
+	public String registerUrl = readConfig.getregisterUrl();
 		
-		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//java//numpyninja//Resources//Properties.properties");
-		prop.load(fis);
-		browserName = prop.getProperty("browser");
+		public WebDriver driver;
+		private String browserName;
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+		public WebDriver initDriver() throws IOException {
 			
+			Properties prop = new Properties();
+<<<<<<< HEAD
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\numpyninja\\Resources\\config.properties");
+=======
+			FileInputStream fis = new FileInputStream(System.getProperty("./src/test/java/numpyninja.Resources/config.properties"));
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+			prop.load(fis);
+			browserName = prop.getProperty("browser");
+			
+			if(browserName.equalsIgnoreCase("chrome")) {
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver();
+				
+			}
+			
+			else
+			{
+				System.out.println("browser not installed");
+			}
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			driver.manage().window().maximize();
+			
+			return driver;
 		}
 		
-		else
-		{
-			System.out.println("browser not installed");
+		public LandingPage launchApplication() throws IOException {
+			driver = initDriver();
+			LandingPage landingPage = new LandingPage(driver);
+			landingPage.goTo();
+			return landingPage;
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-		
-		return driver;
-	}
 	
-	public LandingPage launchApplication() throws IOException {
-		driver = initDriver();
-		LandingPage landingPage = new LandingPage(driver);
-		landingPage.goTo();
-		return landingPage;
-	}
-	
-
 }
+

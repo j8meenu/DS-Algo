@@ -1,4 +1,5 @@
 INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 765607700.index
 3667553180.index
 <<<<<<< Updated upstream
@@ -100,23 +101,8 @@ INDEX VERSION 1.131+D:\EclipseWorkspace\DsAlgoWrkspc\DsAlgoProject\.metadata\.pl
 3138457999.index
 3656962724.index
 4209693700.index
+=======
+>>>>>>> 15e2db40ee77c29349e2ef4c74e7e5932171614c
 1991655398.index
-1940885398.index
-3813360916.index
-2699305802.index
-4162642942.index
-2528292155.index
-546085690.index
-1106775515.index
-3888019372.index
-2296911799.index
-3393155640.index
-654321995.index
-2897812926.index
-95755343.index
-1126738246.index
-3367422976.index
-1397992678.index
-3938546559.index
-2019937317.index
-1545490273.index
+129445225.index
+1865797976.index

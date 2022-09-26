@@ -1,8 +1,12 @@
 package numpyninja.Tests;
 import static org.testng.Assert.assertEquals;
+<<<<<<< HEAD
 
 import java.io.File;
+=======
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 import java.io.IOException;
+<<<<<<< HEAD
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
@@ -15,8 +19,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+=======
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
@@ -24,6 +31,7 @@ import numpyninja.Pages.SignInPage;
 import numpyninja.Resources.listnerclass;
 import numpyninja.util.ExcelReader;
 
+<<<<<<< HEAD
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
@@ -37,8 +45,13 @@ import org.testng.annotations.Test;
 
 import numpyninja.Pages.SignInPage;
 //@Listeners({listnerclass.class})
+=======
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 public class SignInTest extends BaseTest {
+<<<<<<< HEAD
 	
+=======
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 	@BeforeClass
 	public void goToPage() throws IOException {
 				
@@ -48,7 +61,11 @@ public class SignInTest extends BaseTest {
 		home.signinvalidation();
 	  } 
 			 @Test
+<<<<<<< HEAD
 			       public void dslogin() throws IOException {
+=======
+			       public void dslogin() {
+>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 			    	  SignInPage SignIn =new SignInPage(driver);
 			    	   String xl ="./src/test/java/Excel/SignInTest.xlsx";
 			           String Sheet = "Login";

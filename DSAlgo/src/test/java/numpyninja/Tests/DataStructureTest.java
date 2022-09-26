@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,7 @@ public class DataStructureTest extends BaseTest {
 	//WebDriver driver;
 	DataStructurePage ds;
 	HomePage home;
+	HomeTest hometst;
 	SignInPage SignIn;
 	BaseTest base;
 	@BeforeTest
@@ -43,6 +45,9 @@ public class DataStructureTest extends BaseTest {
 	SignIn=new SignInPage(driver);
 		SignIn.login(UserName, Password);
 		SignIn.clickLogin();
+//	hometst=new HomeTest();
+//	hometst.SigningIn();
+			
 	home.getstartedDatastructureclick();
 	String title = driver.getTitle();
    	assertTrue(true, title);
@@ -84,6 +89,13 @@ public void TryEditor() {
 	driver.navigate().back();
 	String title = driver.getTitle();
    	assertTrue(true, title);
+}
+
+@AfterTest
+public void logout() {
+	
+	//SignIn.clicklogout();
+	driver.quit();
 }
 
 }

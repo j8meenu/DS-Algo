@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -127,7 +128,12 @@ String title = driver.getTitle();
 		 String title = driver.getTitle();
 		   	assertTrue(true, title);
 		 }
-	
+	@AfterTest
+	public void logout() {
+		
+		//SignIn.clicklogout();
+		driver.quit();
+	}
 
 	}
 

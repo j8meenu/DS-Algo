@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage  {
+import numpyninja.Base.BaseTest;
+
+public class HomePage extends BaseTest  {
 	 WebDriver driver;
 	
 	public HomePage(WebDriver driver) {
@@ -85,7 +87,12 @@ public static void registervalidation() {
 
 }	
 
-
+//public static void SigningInMethod() {
+//	signinbutton.click();
+//	SignInPage SignIn=new SignInPage(driver);
+//	SignIn.login(UserName, Password);
+//	SignIn.clickLogin();
+//}
 
 }
 

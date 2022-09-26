@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.TreeTest">
+      <class name="numpyninja.Tests.HomeTest">
         <methods>
-          <include name="clickGetStartedTreee"/>
+          <include name="dropdownclick"/>
+          <include name="logout"/>
+          <include name="beforetest"/>
         </methods>
-      </class> <!-- numpyninja.Tests.TreeTest -->
+      </class> <!-- numpyninja.Tests.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

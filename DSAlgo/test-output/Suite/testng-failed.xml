@@ -3,8 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="numpyninja.Tests.HomeTest">
+        <methods>
+          <include name="dropdownclick"/>
+          <include name="logout"/>
+          <include name="DSgetstarted"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.HomeTest -->
       <class name="numpyninja.Tests.LandingPageTest">
         <methods>
+          <include name="logout"/>
           <include name="goToPage"/>
         </methods>
       </class> <!-- numpyninja.Tests.LandingPageTest -->

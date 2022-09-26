@@ -4,7 +4,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,7 +20,7 @@ public class ArrayTest extends BaseTest {
 	HomePage home;
 	SignInPage SignIn;
 	
-	@BeforeTest
+	@BeforeClass
 	public void beforetest() throws IOException {
 		
 			initDriver();
@@ -128,10 +130,10 @@ String title = driver.getTitle();
 		 String title = driver.getTitle();
 		   	assertTrue(true, title);
 		 }
-	@AfterTest
+	@AfterClass
 	public void logout() {
 		
-		//SignIn.clicklogout();
+		SignIn.clicklogout();
 		driver.quit();
 	}
 

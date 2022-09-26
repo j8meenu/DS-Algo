@@ -3,7 +3,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +17,7 @@ public class QueueTest{
 	SignInPage SignIn;
 	
     
-      @BeforeTest
+      @BeforeClass
 		public void queue() {
     	  WebDriverManager.chromedriver().setup();
 		    driver= new ChromeDriver();
@@ -60,7 +62,7 @@ public class QueueTest{
 					//driver.navigate().back();
 				}
 				
-				@AfterTest
+				@AfterClass
 				public void logout() {
 					SignIn.clicklogout();
 					driver.quit();

@@ -87,12 +87,7 @@ public static void registervalidation() {
 
 }	
 
-//public static void SigningInMethod() {
-//	signinbutton.click();
-//	SignInPage SignIn=new SignInPage(driver);
-//	SignIn.login(UserName, Password);
-//	SignIn.clickLogin();
-//}
+
 
 }
 

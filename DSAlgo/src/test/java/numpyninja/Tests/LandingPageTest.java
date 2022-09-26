@@ -22,7 +22,11 @@ public class LandingPageTest extends BaseTest {
 				
 		LandingPage landingPage = this.launchApplication();
 		landingPage.getStarted();
+//<<<<<<< HEAD
 		assertEquals(landingPage.getTitle(), "NumpyNinja");
+//=======
+		//assertEquals(landingPage.getTitle(),"NumpyNinja");
+//>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
 		
 	}
 	@AfterTest

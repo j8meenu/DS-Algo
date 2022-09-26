@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.HomeTest">
+      <class name="numpyninja.Tests.GraphTest">
         <methods>
-          <include name="dropdownclick"/>
+          <include name="practicequestions"/>
+          <include name="graphRep"/>
+          <include name="Graph"/>
+          <include name="graphtopic"/>
           <include name="logout"/>
-          <include name="beforetest"/>
         </methods>
-      </class> <!-- numpyninja.Tests.HomeTest -->
+      </class> <!-- numpyninja.Tests.GraphTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,9 +1,14 @@
 package numpyninja.Base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -21,17 +26,15 @@ public class BaseTest {
 	public String homeUrl = readConfig.gethomeUrl();
 	public String registerUrl = readConfig.getregisterUrl();
 		
-		public WebDriver driver;
+		public static WebDriver driver;
 		private String browserName;
 		
 		public WebDriver initDriver() throws IOException {
 			
 			Properties prop = new Properties();
-//<<<<<<< HEAD
+
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\numpyninja\\Resources\\config.properties");
-//=======
-			//FileInputStream fis = new FileInputStream(System.getProperty("./src/test/java/numpyninja.Resources/config.properties"));
-//>>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+
 			prop.load(fis);
 			browserName = prop.getProperty("browser");
 			
@@ -47,6 +50,9 @@ public class BaseTest {
 			}
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			driver.manage().window().maximize();
+			
+			//File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			//FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen.png"));
 			
 			return driver;
 		}

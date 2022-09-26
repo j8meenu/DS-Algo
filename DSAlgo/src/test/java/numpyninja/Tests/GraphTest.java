@@ -1,22 +1,29 @@
 package numpyninja.Tests;
+import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import numpyninja.Base.BaseTest;
 import numpyninja.Pages.GraphPage;
+import numpyninja.Pages.HomePage;
 import numpyninja.Pages.SignInPage;
 
-public class GraphTest {
+public class GraphTest extends BaseTest{
 	WebDriver driver;
 	
 	GraphPage objGraph;
 	SignInPage SignIn;
-	
-      @BeforeTest
-		public void Graph() {
+	//HomePage home;
+      @BeforeClass
+		public void Graph() throws IOException {
+    	  
+    	  
     	  WebDriverManager.chromedriver().setup();
 		    driver= new ChromeDriver();
 	    driver.get("https://dsportalapp.herokuapp.com/login");
@@ -48,7 +55,7 @@ public class GraphTest {
 					objGraph.practice();
 					
 				}
-				@AfterTest
+				@AfterClass
 				public void logout() {
 					SignIn.clicklogout();
 					driver.quit();

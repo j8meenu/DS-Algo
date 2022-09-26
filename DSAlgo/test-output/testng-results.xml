@@ -1,195 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T12:49:21 EDT" name="Suite" finished-at="2022-09-24T12:49:37 EDT" duration-ms="16165">
+  <suite started-at="2022-09-26T17:11:35 EDT" name="Default suite" finished-at="2022-09-26T17:11:45 EDT" duration-ms="10614">
     <groups>
     </groups>
-    <test started-at="2022-09-24T12:49:21 EDT" name="Test" finished-at="2022-09-24T12:49:37 EDT" duration-ms="16165">
-      <class name="numpyninja.Tests.HomeTest">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:21 EDT" name="beforetest" finished-at="2022-09-24T12:49:29 EDT" duration-ms="7693" status="PASS">
+    <test started-at="2022-09-26T17:11:35 EDT" name="Default test" finished-at="2022-09-26T17:11:45 EDT" duration-ms="10614">
+      <class name="numpyninja.Tests.GraphTest">
+        <test-method is-config="true" signature="Graph()[pri:0, instance:numpyninja.Tests.GraphTest@7ae0a9ec]" started-at="2022-09-26T17:11:35 EDT" name="Graph" finished-at="2022-09-26T17:11:41 EDT" duration-ms="6378" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method signature="dropdownclick()[pri:1, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:31 EDT" name="dropdownclick" finished-at="2022-09-24T12:49:32 EDT" duration-ms="441" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at numpyninja.Tests.HomeTest.dropdownclick(HomeTest.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- Graph -->
+        <test-method signature="graphtopic()[pri:0, instance:numpyninja.Tests.GraphTest@7ae0a9ec]" started-at="2022-09-26T17:11:41 EDT" name="graphtopic" finished-at="2022-09-26T17:11:43 EDT" duration-ms="1584" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdownclick -->
-        <test-method signature="DSgetstarted()[pri:2, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:32 EDT" name="DSgetstarted" finished-at="2022-09-24T12:49:32 EDT" duration-ms="348" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at numpyninja.Tests.HomeTest.DSgetstarted(HomeTest.java:67)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- graphtopic -->
+        <test-method signature="graphRep()[pri:1, instance:numpyninja.Tests.GraphTest@7ae0a9ec]" started-at="2022-09-26T17:11:43 EDT" name="graphRep" finished-at="2022-09-26T17:11:44 EDT" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DSgetstarted -->
-        <test-method signature="Arraygetstarted()[pri:3, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:32 EDT" name="Arraygetstarted" finished-at="2022-09-24T12:49:33 EDT" duration-ms="262" status="PASS">
+        </test-method> <!-- graphRep -->
+        <test-method signature="practicequestions()[pri:2, instance:numpyninja.Tests.GraphTest@7ae0a9ec]" started-at="2022-09-26T17:11:44 EDT" name="practicequestions" finished-at="2022-09-26T17:11:45 EDT" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Arraygetstarted -->
-        <test-method signature="linkedListgetstarted()[pri:4, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:33 EDT" name="linkedListgetstarted" finished-at="2022-09-24T12:49:33 EDT" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkedListgetstarted -->
-        <test-method signature="stackGetstarted()[pri:5, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:33 EDT" name="stackGetstarted" finished-at="2022-09-24T12:49:33 EDT" duration-ms="500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stackGetstarted -->
-        <test-method signature="queueGetstarted()[pri:6, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:33 EDT" name="queueGetstarted" finished-at="2022-09-24T12:49:34 EDT" duration-ms="309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queueGetstarted -->
-        <test-method signature="treeGetstarted()[pri:7, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:34 EDT" name="treeGetstarted" finished-at="2022-09-24T12:49:34 EDT" duration-ms="308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- treeGetstarted -->
-        <test-method signature="graphGetstarted()[pri:8, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:34 EDT" name="graphGetstarted" finished-at="2022-09-24T12:49:34 EDT" duration-ms="324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- graphGetstarted -->
-        <test-method signature="SigninValidation()[pri:9, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:34 EDT" name="SigninValidation" finished-at="2022-09-24T12:49:35 EDT" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SigninValidation -->
-        <test-method signature="RegisterValidation()[pri:10, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:35 EDT" name="RegisterValidation" finished-at="2022-09-24T12:49:35 EDT" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterValidation -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.HomeTest@4a8355dd]" started-at="2022-09-24T12:49:35 EDT" name="logout" finished-at="2022-09-24T12:49:36 EDT" duration-ms="1152" status="PASS">
+        </test-method> <!-- practicequestions -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.GraphTest@7ae0a9ec]" started-at="2022-09-26T17:11:45 EDT" name="logout" finished-at="2022-09-26T17:11:45 EDT" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-      </class> <!-- numpyninja.Tests.HomeTest -->
-      <class name="numpyninja.Tests.LandingPageTest">
-        <test-method signature="goToPage()[pri:0, instance:numpyninja.Tests.LandingPageTest@7fd50002]" started-at="2022-09-24T12:49:29 EDT" name="goToPage" finished-at="2022-09-24T12:49:31 EDT" duration-ms="2560" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<NumpyNinja> but was:<null>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<NumpyNinja> but was:<null>
-at org.junit.Assert.fail(Assert.java:88)
-at org.junit.Assert.failNotEquals(Assert.java:743)
-at org.junit.Assert.assertEquals(Assert.java:118)
-at org.junit.Assert.assertEquals(Assert.java:144)
-at numpyninja.Tests.LandingPageTest.goToPage(LandingPageTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToPage -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.LandingPageTest@7fd50002]" started-at="2022-09-24T12:49:36 EDT" name="logout" finished-at="2022-09-24T12:49:37 EDT" duration-ms="1161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- numpyninja.Tests.LandingPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- numpyninja.Tests.GraphTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,6 +3,8 @@ package numpyninja.Tests;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,8 +15,9 @@ import numpyninja.Pages.StackPage;
 public class StackTest  extends BaseTest {
 
 	StackPage stackPage;
+	SignInPage SignIn;
 
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws IOException  {
     
       initDriver();
@@ -58,6 +61,12 @@ public class StackTest  extends BaseTest {
           String title = driver.getTitle();
       	  Assert.assertEquals(title,"Practice Questions");
       }
+      
+      @AfterClass
+		public void logout() {
+		SignIn.clicklogout();
+			driver.quit();
+		}
         
       
 } 

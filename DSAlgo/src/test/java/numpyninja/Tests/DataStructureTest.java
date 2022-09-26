@@ -8,6 +8,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,26 +26,24 @@ public class DataStructureTest extends BaseTest {
 	//WebDriver driver;
 	DataStructurePage ds;
 	HomePage home;
-	SignInPage signin;
+	HomeTest hometst;
+	SignInPage SignIn;
 	BaseTest base;
-	@BeforeTest
+	@BeforeClass
 	public void beforetest() throws IOException {
 		
 			initDriver();
 	      driver.get(homeUrl);
 	      
-//		WebDriverManager.chromedriver().setup();
-//		driver = new ChromeDriver();
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		driver.get("https://dsportalapp.herokuapp.com/home");
+
 	}	
-		@Test(priority=0)
-		public void introDatastructure() {
-		home=new HomePage(driver);
+	@Test(priority=0)
+	public void introDatastructure() {
+	home=new HomePage(driver);
 	home.signinvalidation();
-		signin=new SignInPage(driver);
-		signin.login("Nenyarajesh", "Pinky1213");
-	signin.clickLogin();
+	SignIn=new SignInPage(driver);
+	SignIn.login(UserName, Password);
+	SignIn.clickLogin();
 	home.getstartedDatastructureclick();
 	String title = driver.getTitle();
    	assertTrue(true, title);
@@ -80,8 +81,17 @@ public void TryHere() {
 public void TryEditor() {
 	ds.TryEditorClick();
 	driver.navigate().back();
-	//String title = driver.getTitle();
-   	//assertTrue(true, title);
+	driver.navigate().back();
+	driver.navigate().back();
+	String title = driver.getTitle();
+   	assertTrue(true, title);
+}
+
+@AfterClass
+public void logout() {
+	
+	//SignIn.clicklogout();
+	driver.quit();
 }
 
 }

@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" >
   <test thread-count="5" name="Test">
     <classes>
-      <class name="numpyninja.Tests.LandingPageTest"/>
+     <class name="numpyninja.Tests.LandingPageTest"></class>
+     <class name="numpyninja.Resources.listnerclass"></class>
+     
+           <class name="numpyninja.Tests.HomeTest"></class>
+           <class name="numpyninja.Resources.listnerclass"></class>
+           <class name="numpyninja.Tests.ResisterTest"></class>
+           <class name="numpyninja.Tests.SignInTest"></class>
+      <class name="numpyninja.Tests.DataStructureTest"></class>
+      <class name="numpyninja.Tests.ArrayTest"></class>
+      <class name="numpyninja.Tests.LinkedListTest"></class>
+      <class name="numpyninja.Tests.StackTest"></class>
+      <class name="numpyninja.Tests.QueueTest"></class>
+      <class name="numpyninja.Tests.GraphTest"></class>
+           
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

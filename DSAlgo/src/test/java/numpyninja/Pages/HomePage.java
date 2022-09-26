@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage  {
+import numpyninja.Base.BaseTest;
+
+public class HomePage extends BaseTest  {
 	 WebDriver driver;
 	
 	public HomePage(WebDriver driver) {

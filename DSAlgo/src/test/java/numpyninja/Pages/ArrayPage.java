@@ -1,5 +1,6 @@
 package numpyninja.Pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,26 +29,36 @@ public class ArrayPage {
 	@FindBy(xpath="//a[text()='Max Consecutive Ones']")public static WebElement maxconsecutiveones;
 	@FindBy(xpath="//a[text()='Find Numbers with Even Number of Digits']")public static WebElement findnumbers;
 	@FindBy(xpath="//a[text()='Squares of  a Sorted Array']")public static WebElement squarestab;
+	@FindBy(xpath="//textarea[@tabindex='0']")public static WebElement codetextarea;
+	@FindBy(xpath="//button[@type='button']")public static WebElement RunBtn;
 	
 	public static void Arraygetstarted() {
 		arraygetstartedbtn.click();
 	}
-public static void Arraysinpython() {
+public static void ArraysInPython() {
 	arraysinpython.click();
 	tryherebutton.click();
+	codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
 }
 
 public static void Arraysusinglist() {
 	arraysusinglistbtn.click();
 	tryherebtn1.click();
+	codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
 }
 public static void Basicoperations() {
 	basicoperationsbtn.click();
 	tryherebtn2.click();
+	codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
 }
 public static void Applicationofarrays() {
 	applicationofarraysbtn.click();
 	tryherebtn3.click();
+	codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
 }
 
 public static void Practicequestions() {
@@ -55,6 +66,37 @@ public static void Practicequestions() {
 	
 }
 
+public static void SearchTheArray() {
+	searchthearray.click();
+	codetextarea.sendKeys(Keys.CONTROL + "a");
+	codetextarea.sendKeys(Keys.DELETE);
+		codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
+}
+
+public static void MaxConsecutiveOnes() {
+	maxconsecutiveones.click();
+	codetextarea.sendKeys(Keys.CONTROL + "a");
+	codetextarea.sendKeys(Keys.DELETE);
+		codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
+}
+
+public static void FindNumbers() {
+	findnumbers.click();
+	codetextarea.sendKeys(Keys.CONTROL + "a");
+	codetextarea.sendKeys(Keys.DELETE);
+		codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
+}
+
+public static void SquaresTab() {
+	squarestab.click();
+	codetextarea.sendKeys(Keys.CONTROL + "a");
+	codetextarea.sendKeys(Keys.DELETE);
+		codetextarea.sendKeys("print('Hello World')");
+	RunBtn.click();
+}
 
 
 }

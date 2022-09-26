@@ -5,6 +5,8 @@ package numpyninja.Tests;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,8 +20,9 @@ public class LinkedListTest extends BaseTest {
 	
 	 LinkedListPage linkedList;
 	 HomePage homePage;
+	 SignInPage SignIn;
 	 
-        @BeforeTest
+        @BeforeClass
 		public void setUp() throws IOException  {
 	    
           initDriver();
@@ -81,8 +84,17 @@ public class LinkedListTest extends BaseTest {
         public void practiceQuestion() throws InterruptedException {
         	
         	linkedList.practiceQuestionBtn(); 
+        	driver.navigate().back();
+        	driver.navigate().back();
         	String title = driver.getTitle();
         	Assert.assertEquals(title,"Practice Questions");
         }   
+        
+        @AfterClass
+    	public void logout() {
+    		
+        	SignIn.clicklogout();
+    		driver.quit();
+    	}
          
 }

@@ -2,20 +2,25 @@ package numpyninja.Tests;
 
 import static org.testng.Assert.assertEquals;
 import java.io.IOException;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.RegisterPage;
+import numpyninja.Pages.SignInPage;
 
 public class ResisterTest extends BaseTest {
 	
 	 RegisterPage Reg;  
+	 SignInPage SignIn;
 	 
 	 String diffconfirmpass = "ninja@70";
 	 String sameconfirmpass = "ninja@90";
 	    
-	    @BeforeTest
+	    @BeforeClass
 		public void setUp() throws IOException 
 	    {
 	           initDriver();
@@ -64,6 +69,11 @@ public class ResisterTest extends BaseTest {
         	
         }  */
 
-
+        @AfterClass
+    	public void logout() {
+    		
+    		//SignIn.clicklogout();
+    		driver.quit();
+    	}
         
 }

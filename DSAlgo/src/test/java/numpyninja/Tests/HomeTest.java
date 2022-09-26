@@ -1,5 +1,6 @@
 package numpyninja.Tests;
 
+import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
@@ -8,7 +9,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,46 +21,30 @@ import numpyninja.Base.BaseTest;
 import numpyninja.Pages.DataStructurePage;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
+import numpyninja.Pages.SignInPage;
+import numpyninja.Resources.listnerclass;
 
 public class HomeTest extends BaseTest {
 	
 	//WebDriver driver;
 	HomePage home;
-	//BaseTest base;
 	LandingPage lp;
-	@BeforeTest
+	SignInPage SignIn;
+	
+	@BeforeClass
 	public void beforetest() throws IOException {
-		
-		initDriver();
-		driver.get(baseUrl);
-		lp=new LandingPage(driver);
-		lp.getStarted();
-		//WebDriverManager.chromedriver().setup();
-		//driver = new ChromeDriver();
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//driver.get("https://dsportalapp.herokuapp.com/home");
-		//driver.manage().window().maximize();
-		//base=new BaseTest();
-		//base.initDriver();
+		LandingPage landingPage = this.launchApplication();
+		landingPage.getStarted();
+	
+				}
 
-	}
-//	@Test(priority=0)
-//	public void launchweb() throws IOException {
-//		
-//		base=new BaseTest();
-//		base.launchApplication();
-//	}
 	@Test(priority=1)
 	public void dropdownclick() {
 		
 		home=new HomePage(driver);
 		home.dropdown();
-		String actualurl= "https://dsportalapp.herokuapp.com/home";
-		String expectedurl="https://dsportalapp.herokuapp.com/home";
-				Assert.assertEquals(actualurl, expectedurl);
-	   	if(actualurl.equalsIgnoreCase(expectedurl)) { 
-	   		System.out.println("you are not logged in"); }
-	   	else { System.out.println("you are  logged in"); }
+		String title = driver.getTitle();
+    	Assert.assertEquals(title,"NumpyNinja");
 	}
 	
 
@@ -63,7 +52,7 @@ public class HomeTest extends BaseTest {
 	public void DSgetstarted() {
 	home=new HomePage(driver);
 	home.getstartedDatastructureclick();;
-		String actualurl= "https://dsportalapp.herokuapp.com/home";
+		String actualurl= "https://dsportalapp.herokuapp.com/data-structures-introduction/";
 	String expectedurl="https://dsportalapp.herokuapp.com/home";
 		Assert.assertEquals(actualurl, expectedurl);
    	if(actualurl.equalsIgnoreCase(expectedurl)) { 
@@ -120,7 +109,69 @@ public class HomeTest extends BaseTest {
 	public void RegisterValidation() {
 		home= new HomePage(driver);
 		home.registervalidation();
-		
+		//driver.navigate().back();
 	}
-
+	
+	
+	
+	@AfterClass
+	public void logout() {
+		
+		//SignIn.clicklogout();
+		driver.quit();
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//initDriver();
+		//driver.get(homeUrl);
+
+
+
+//String actualurl= "https://dsportalapp.herokuapp.com/data-structures-introduction/";
+//String expectedurl="https://dsportalapp.herokuapp.com/home";
+//		Assert.assertEquals(actualurl, expectedurl);
+
+
+//	if(actualurl.equalsIgnoreCase(expectedurl)) { 
+//	System.out.println("you are not logged in"); }
+//else { System.out.println("you are  logged in"); }
+
+
+
+//@Test(priority=11)
+//public void SigningIn() {
+//	home=new HomePage(driver);
+//home.signinvalidation();
+//SignIn=new SignInPage(driver);
+//	SignIn.login(UserName, Password);
+//	SignIn.clickLogin();
+//}
+//@Listeners({listnerclass.class})
+
+

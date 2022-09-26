@@ -1,49 +1,27 @@
 package numpyninja.Tests;
 import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
-import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
+import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 import numpyninja.util.ExcelReader;
 
-import static org.testng.Assert.assertEquals;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import numpyninja.Pages.SignInPage;
-
 public class SignInTest extends BaseTest {
-	
-	 //WebDriver driver;
-	 SignInPage SignIn;  
-	 @BeforeTest		  
-		public void SignIn() throws IOException  {
-	    initDriver();
-	    driver.get(loginUrl);
-	    
-//		 WebDriverManager.chromedriver().setup();
-//		    driver= new ChromeDriver();
-//	    driver.get("https://dsportalapp.herokuapp.com/login");
-//	    driver.manage().window().maximize();
-//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	@BeforeClass
+	public void goToPage() throws IOException {
+				
+		LandingPage landingPage = this.launchApplication();
+		landingPage.getStarted();
+		HomePage home= new HomePage(driver);
+		home.signinvalidation();
 	  } 
 			 @Test
 			       public void dslogin() {
-			    	   SignIn =new SignInPage(driver);
+			    	  SignInPage SignIn =new SignInPage(driver);
 			    	   String xl ="./src/test/java/Excel/SignInTest.xlsx";
 			           String Sheet = "Login";
 			          int rowCount = 5;
@@ -91,9 +69,9 @@ public class SignInTest extends BaseTest {
 			 }
 			 
 
-@AfterTest
+@AfterClass
 public void logout() {
-	
+	SignInPage SignIn =new SignInPage(driver);
 	SignIn.clicklogout();
 	driver.quit();
 }}

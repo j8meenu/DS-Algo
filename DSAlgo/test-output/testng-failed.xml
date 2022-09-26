@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.LandingPageTest">
+      <class name="numpyninja.Tests.TreeTest">
         <methods>
-          <include name="goToPage"/>
+          <include name="clickGetStartedTreee"/>
         </methods>
-      </class> <!-- numpyninja.Tests.LandingPageTest -->
+      </class> <!-- numpyninja.Tests.TreeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

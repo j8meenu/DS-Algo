@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T11:59:22 EDT" name="Default suite" finished-at="2022-09-23T11:59:22 EDT" duration-ms="142">
+  <suite started-at="2022-09-26T10:25:28 EDT" name="Default suite" finished-at="2022-09-26T10:25:32 EDT" duration-ms="3713">
     <groups>
     </groups>
-    <test started-at="2022-09-23T11:59:22 EDT" name="Default test" finished-at="2022-09-23T11:59:22 EDT" duration-ms="142">
-      <class name="numpyninja.Tests.LandingPageTest">
-        <test-method signature="goToPage()[pri:0, instance:numpyninja.Tests.LandingPageTest@3f91b517]" started-at="2022-09-23T11:59:22 EDT" name="goToPage" finished-at="2022-09-23T11:59:22 EDT" duration-ms="46" status="FAIL">
+    <test started-at="2022-09-26T10:25:28 EDT" name="Default test" finished-at="2022-09-26T10:25:32 EDT" duration-ms="3713">
+      <class name="numpyninja.Tests.TreeTest">
+        <test-method signature="clickGetStartedTreee()[pri:0, instance:numpyninja.Tests.TreeTest@3f91b517]" started-at="2022-09-26T10:25:28 EDT" name="clickGetStartedTreee" finished-at="2022-09-26T10:25:31 EDT" duration-ms="3616" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:149)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-at numpyninja.Base.BaseTest.initDriver(BaseTest.java:32)
-at numpyninja.Base.BaseTest.launchApplication(BaseTest.java:54)
-at numpyninja.Tests.LandingPageTest.goToPage(LandingPageTest.java:20)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at numpyninja.Pages.HomePage.getstartedTreeclick(HomePage.java:69)
+at numpyninja.Tests.TreeTest.clickGetStartedTreee(TreeTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,8 +49,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToPage -->
-      </class> <!-- numpyninja.Tests.LandingPageTest -->
+        </test-method> <!-- clickGetStartedTreee -->
+      </class> <!-- numpyninja.Tests.TreeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

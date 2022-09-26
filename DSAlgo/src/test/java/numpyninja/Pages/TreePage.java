@@ -60,14 +60,11 @@ public class TreePage {
 	
 	
 	
-	public WebElement getGetStartedTreeBtn() {
-		return getStartedTreeBtn;
+	public void getGetStartedTreeBtn() {
+		 getStartedTreeBtn.click();
 	}
 
-	public void setGetStartedTreeBtn(WebElement getStartedTreeBtn) {
-		this.getStartedTreeBtn = getStartedTreeBtn;
-	}
-
+	
 	public WebElement getOverviewOfTreesLink() {
 		return overviewOfTreesLink;
 	}

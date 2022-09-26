@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="numpyninja.Pages.TreePage"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="numpyninja.Pages.SignInPage"/>
+    <fullyQualifiedTypeName name="numpyninja.Pages.LandingPage"/>
+    <fullyQualifiedTypeName name="numpyninja.Tests.SignInTest"/>
 </qualifiedTypeNameHistroy>

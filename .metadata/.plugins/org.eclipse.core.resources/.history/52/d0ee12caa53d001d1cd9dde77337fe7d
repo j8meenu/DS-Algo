@@ -1,0 +1,19 @@
+package numpyninja.Tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import numpyninja.Base.BaseTest;
+
+public class TreeTest extends BaseTest {
+
+	@Test
+	public void clickGetStartedTreee() throws IOException {
+		SignInTest signIn = new SignInTest();
+		signIn.SignIn();
+		
+	}
+	
+	
+}

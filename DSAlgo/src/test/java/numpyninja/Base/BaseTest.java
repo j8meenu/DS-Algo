@@ -20,20 +20,13 @@ public class BaseTest {
 	public String loginUrl = readConfig.getLoginUrl();
 	public String homeUrl = readConfig.gethomeUrl();
 	public String registerUrl = readConfig.getregisterUrl();
-		
+	private String browserName = readConfig.getBrowser();	
 		public WebDriver driver;
-		private String browserName;
+		
 		
 		public WebDriver initDriver() throws IOException {
 			
-			Properties prop = new Properties();
-
-
-			FileInputStream fis = new FileInputStream(System.getProperty("./src/test/java/numpyninja.Resources/config.properties"));
-
-			prop.load(fis);
-			browserName = prop.getProperty("browser");
-			
+		
 			if(browserName.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();

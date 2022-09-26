@@ -21,13 +21,14 @@ public class ReadConfig {
 		    System.out.println("Exception is"+e.getMessage());
 		}
 	}
+	
 	 public String getApplication() {
 	    String url = pro.getProperty("baseUrl");
 		return url;
 		
 	}
-	 public String getChromePath() {
-		 String browser =pro.getProperty("Browser");
+	 public String getBrowser() {
+		 String browser =pro.getProperty("browser");
 		 return browser;
 	 }
 	 public String getUserName() {

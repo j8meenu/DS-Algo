@@ -1,6 +1,4 @@
 package numpyninja.Base;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -21,9 +19,10 @@ public class BaseTest {
 	
 	ReadConfig readConfig = new ReadConfig();
 	public String baseUrl =readConfig.getApplication();
-	public String UserName = readConfig.getUserName();
-	public String Password = readConfig.getPassword();
-	public  String loginUrl = readConfig.getLoginUrl();
+  
+	public String userName = readConfig.getUserName();
+	public String password = readConfig.getPassword();
+	public String loginUrl = readConfig.getLoginUrl();
 	public String homeUrl = readConfig.gethomeUrl();
 	public String registerUrl = readConfig.getregisterUrl();
 		
@@ -64,7 +63,11 @@ public class BaseTest {
 			landingPage.goTo();
 			return landingPage;
 		}
-		
+    
+		public void teardown() {
+       teardown();
+        }
+	
 	
 }
 

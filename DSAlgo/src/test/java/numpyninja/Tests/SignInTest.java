@@ -1,56 +1,18 @@
 package numpyninja.Tests;
 import static org.testng.Assert.assertEquals;
 
-
-import java.io.File;
-
-
 import java.io.IOException;
 
-import java.time.Duration;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import org.testng.annotations.Test;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
-import numpyninja.Resources.listnerclass;
 import numpyninja.util.ExcelReader;
 
-
-import static org.testng.Assert.assertEquals;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import numpyninja.Pages.SignInPage;
-
-//@Listeners({listnerclass.class})
-
-
 public class SignInTest extends BaseTest {
-
-	
 
 	@BeforeClass
 	public void goToPage() throws IOException {
@@ -61,9 +23,7 @@ public class SignInTest extends BaseTest {
 		home.signinvalidation();
 	  } 
 			 @Test
-
-			       public void dslogin() throws IOException {
-			       
+			  public void dslogin() {
 
 			    	  SignInPage SignIn =new SignInPage(driver);
 			    	   String xl ="./src/test/java/Excel/SignInTest.xlsx";
@@ -121,7 +81,5 @@ public class SignInTest extends BaseTest {
 
 @AfterClass
 public void logout() {
-	SignInPage SignIn =new SignInPage(driver);
-	SignIn.clicklogout();
-	driver.quit();
+	teardown();
 }}

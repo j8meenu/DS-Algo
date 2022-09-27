@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
 	WebDriver driver;
+	HomePage homePage;
 
 	
 	public LandingPage(WebDriver driver) {
@@ -23,9 +24,10 @@ public class LandingPage {
 		
 	}
 	
-	public void getStarted() {
+	public HomePage getStarted() {
 		//Clicking on Button get Started
 		getStartedButton.click();
+		return homePage;
 	
 	}
 	

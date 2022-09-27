@@ -5,17 +5,16 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import numpyninja.Base.BaseTest;
+import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.RegisterPage;
-import numpyninja.Pages.SignInPage;
 
 public class ResisterTest extends BaseTest {
 	
+	 HomePage home;
 	 RegisterPage Reg;  
-	 SignInPage SignIn;
 	 
 	 String diffconfirmpass = "ninja@70";
 	 String sameconfirmpass = "ninja@90";
@@ -23,27 +22,26 @@ public class ResisterTest extends BaseTest {
 	    @BeforeClass
 		public void setUp() throws IOException 
 	    {
-	           initDriver();
-	           driver.get(registerUrl);
+	    	LandingPage landingPage = this.launchApplication();
+			home= landingPage.getStarted();
+			Reg = home.registervalidation();
 	    } 	    
 	    
 	    @Test(priority = 0)
         public void RegisterWithEmptyField()  {
-	   
-			System.out.println("Executing RegisterPageTest");
         	Reg =new RegisterPage(driver);
         	Reg.RegisterButtton();
        	 	assertEquals(Reg.validationMessage(), "Please fill out this field.");
         }
         @Test(priority = 1)
         public void EmptyPasswordTest() {
-             Reg.EmptyPassword(UserName);
+             Reg.EmptyPassword(userName);
              Reg.RegisterButtton(); 
              assertEquals(Reg.validationMessage(), "Please fill out this field.");
         }
         @Test(priority = 2)
         public void EmptyConfirmPassword() {
-        	Reg.EmptyConfirmPassword(UserName,Password);
+        	Reg.EmptyConfirmPassword(userName,password);
         	Reg.RegisterButtton();
         	assertEquals(Reg.validationMessage(), "Please fill out this field.");
         }
@@ -51,29 +49,30 @@ public class ResisterTest extends BaseTest {
         
         @Test(priority = 3)
         public void DiffPassword() throws InterruptedException {
-        	Reg =new RegisterPage(driver);
-        	Reg.DiffPassword(UserName,Password,diffconfirmpass);
+        	Reg.DiffPassword(userName,password,diffconfirmpass);
         	Reg.RegisterButtton();
         	String alert= Reg.alertMessage("passmismatch");
         	assertEquals(alert, "password_mismatch:The two password fields didn’t match.");
-        
+        	
         }   
         
-         
-     /*   @Test(priority = 4)
+     /*    
+       @Test(priority = 4)
        public void Register() {
-        	Reg.Register(UserName,Password,sameconfirmpass);
+        	Reg.Register(userName,password,sameconfirmpass);
         	Reg.RegisterButtton();
         	String login = Reg.alertMessage("accountcreated");
         	assertEquals(login,"New Account Created. You are logged in as "+UserName); 	
         	
         }  */
-
         @AfterClass
-    	public void logout() {
-    		
-    		//SignIn.clicklogout();
-    		driver.quit();
-    	}
+        public void logOut() {
+       
+        	teardown();
+        }
+
+
+        
+
         
 }

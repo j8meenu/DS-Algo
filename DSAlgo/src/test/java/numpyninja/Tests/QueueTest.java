@@ -1,5 +1,5 @@
 package numpyninja.Tests;
-<<<<<<< HEAD
+
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -8,33 +8,36 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-=======
+
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
->>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.QueuePage;
 import numpyninja.Pages.SignInPage;
 public class QueueTest extends BaseTest{
 	    
 	QueuePage objqueue;
-	
-<<<<<<< HEAD
+	SignInPage SignIn;
+
     
-      @BeforeClass
-		public void queue() {
-    	  WebDriverManager.chromedriver().setup();
-		    driver= new ChromeDriver();
-				driver.get("https://dsportalapp.herokuapp.com/login");
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-				SignIn =new SignInPage(driver);
-				SignIn.login("Nenyarajesh","Pinky1213");
-		       	SignIn.clickLogin();
-		       	objqueue =new QueuePage(driver);
-=======
+//      @BeforeClass
+//		public void queue() {
+//    	  WebDriverManager.chromedriver().setup();
+//		    driver= new ChromeDriver();
+//				driver.get("https://dsportalapp.herokuapp.com/login");
+//				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//				SignIn =new SignInPage(driver);
+//				SignIn.login("Nenyarajesh","Pinky1213");
+//		       	SignIn.clickLogin();
+//		       	objqueue =new QueuePage(driver);
+//      }
+
       @BeforeClass
       public void setUp() throws IOException  {
   	    
@@ -44,7 +47,7 @@ public class QueueTest extends BaseTest{
 	      SignIn.login(UserName, Password);
 	      SignIn.clickLogin();
 	      objqueue =new QueuePage(driver);
->>>>>>> branch 'feature' of https://github.com/j8meenu/DS-Algo.git
+
 		       objqueue.getstartedqueue();
 		       	
 		}
@@ -86,6 +89,8 @@ public class QueueTest extends BaseTest{
 					objqueue.practice();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
+			       	driver.navigate().back();
+			       	//driver.navigate().back();
 					
 				}
 				

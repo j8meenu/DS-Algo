@@ -25,25 +25,25 @@ import numpyninja.Pages.HomePage;
 import numpyninja.Pages.SignInPage;
 
 public class GraphTest extends BaseTest{
-	WebDriver driver;
+	//WebDriver driver;
 
 	
 	GraphPage objGraph;
 	SignInPage SignIn;
 	//HomePage home;
-      @BeforeClass
-		public void Graph() throws IOException {
-    	  
-    	  
-    	  WebDriverManager.chromedriver().setup();
-		    driver= new ChromeDriver();
-	    driver.get("https://dsportalapp.herokuapp.com/login");
-	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-				SignIn =new SignInPage(driver);
-				SignIn.login("Nenyarajesh","Pinky1213");
-
-      }
+//      @BeforeClass
+//		public void Graph() throws IOException {
+//    	  
+//    	  
+//    	  WebDriverManager.chromedriver().setup();
+//		    driver= new ChromeDriver();
+//	    driver.get("https://dsportalapp.herokuapp.com/login");
+//	    driver.manage().window().maximize();
+//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//				SignIn =new SignInPage(driver);
+//				SignIn.login("Nenyarajesh","Pinky1213");
+//
+//      }
 	 
       @BeforeClass
 		public void setUp() throws IOException  {

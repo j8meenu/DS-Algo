@@ -64,7 +64,7 @@ public class StackTest  extends BaseTest {
       
       @AfterClass
 		public void logout() {
-		SignIn.clicklogout();
+		//SignIn.clicklogout();
 			driver.quit();
 		}
         

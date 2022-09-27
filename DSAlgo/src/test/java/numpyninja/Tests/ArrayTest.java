@@ -133,7 +133,7 @@ String title = driver.getTitle();
 	@AfterClass
 	public void logout() {
 		
-		SignIn.clicklogout();
+		//SignIn.clicklogout();
 		driver.quit();
 	}
 

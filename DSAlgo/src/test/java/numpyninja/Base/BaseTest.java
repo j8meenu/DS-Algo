@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -22,14 +23,14 @@ public class BaseTest {
 	public String baseUrl =readConfig.getApplication();
 	public String UserName = readConfig.getUserName();
 	public String Password = readConfig.getPassword();
-	public String loginUrl = readConfig.getLoginUrl();
+	public  String loginUrl = readConfig.getLoginUrl();
 	public String homeUrl = readConfig.gethomeUrl();
 	public String registerUrl = readConfig.getregisterUrl();
 		
 		public static WebDriver driver;
 		private String browserName;
 		
-		public WebDriver initDriver() throws IOException {
+		public  WebDriver initDriver() throws IOException {
 			
 			Properties prop = new Properties();
 
@@ -63,6 +64,7 @@ public class BaseTest {
 			landingPage.goTo();
 			return landingPage;
 		}
+		
 	
 }
 

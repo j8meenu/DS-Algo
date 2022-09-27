@@ -23,7 +23,7 @@ import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 import numpyninja.Resources.listnerclass;
-
+@Listeners({listnerclass.class})
 public class HomeTest extends BaseTest {
 	
 	//WebDriver driver;

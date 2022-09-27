@@ -26,20 +26,6 @@ public class listnerclass extends BaseTest implements ITestListener {
 		initDriver();
 	}	
 	
-	//}
-//	@Test
-//	public void f() throws IOException {
-//		takeSnapShot("SnapShot", driver);
-//}
-//
-//		
-//
-//	 
-// public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
-//		//TakesScreenshot scrShot=((TakeScreenshot)driver);
-//		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
-//		}
 
  
 	public void FailedScreenshot(String testMethodName) throws IOException {
@@ -48,27 +34,10 @@ public class listnerclass extends BaseTest implements ITestListener {
 File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 Date d = new Date();
 String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
-FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\" + testMethodName + "_" + TimeStamp
-		+ ".png"));
-
-		//File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		
-		//try {
-			//FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo" + 
-			//testMethodName + "_" + TimeStamp + ".png"));
-		//} catch (IOException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-		
+FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\srcshot\\screenshot" + testMethodName + "_" + TimeStamp
+		+ ".png"));		
 }
- 
- 
- 
- 
- 
- 
- 
- 
+  
     public void onTestFailure(ITestResult result)
     {
    	System.out.println(" test has failed *****");
@@ -90,7 +59,67 @@ catch(Exception e)
 
 
 
-//	    	String methodName=result.getName().toString().trim();
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	
+  		//try {
+  			//FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo" + 
+  			//testMethodName + "_" + TimeStamp + ".png"));
+  		//} catch (IOException e) {
+  			// TODO Auto-generated catch block
+  			//e.printStackTrace();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //	    	String methodName=result.getName().toString().trim();
 //	        ITestContext context = result.getTestContext();
 //	       WebDriver driver = (WebDriver)context.getAttribute("driver");
 //	       try {
@@ -136,7 +165,21 @@ catch(Exception e)
 	 
 	 
 	 
-	 
+//}
+//@Test
+//public void f() throws IOException {
+//	takeSnapShot("SnapShot", driver);
+//}
+//
+//	
+//
+// 
+//public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
+//	//TakesScreenshot scrShot=((TakeScreenshot)driver);
+//	File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//	FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
+//	}
+
 	 
 	 
 	 

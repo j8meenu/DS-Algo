@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,10 @@ public class LandingPageTest extends BaseTest {
 
 		
 	}
-	@AfterTest
+	@AfterClass
 	public void logout() {
 		
 		//SignIn.clicklogout();
 		driver.quit();
-	}}
+	}
+	}

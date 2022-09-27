@@ -65,6 +65,9 @@ public class BaseTest {
 			return landingPage;
 		}
 		
+		public void teardown() {
+        	driver.quit();
+        }
 	
 }
 

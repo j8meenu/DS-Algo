@@ -1,19 +1,15 @@
 package numpyninja.Tests;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.ArrayPage;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.SignInPage;
+
 
 public class ArrayTest extends BaseTest {
 	ArrayPage array;

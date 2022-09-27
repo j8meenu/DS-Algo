@@ -5,34 +5,39 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import numpyninja.Base.BaseTest;
+import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 import numpyninja.Pages.StackPage;
 
 public class StackTest  extends BaseTest {
 
 	StackPage stackPage;
-	SignInPage SignIn;
 
 	@BeforeClass
 	public void setUp() throws IOException  {
     
-      initDriver();
-      driver.get(loginUrl);
-      
-        SignInPage SignIn =new SignInPage(driver);
-        SignIn.login(UserName, Password);
-        SignIn.clickLogin();
+		   LandingPage landingPage = this.launchApplication();
+		   landingPage.getStarted();
+			
+		    HomePage home= new HomePage(driver);
+		    home.signinvalidation();
+	        
+		    SignInPage signIn =new SignInPage(driver);
+	        signIn.login(UserName, Password);
+	        signIn.clickLogin(); 
+	        
+	        home.getstartedStackclick();
   }
 	
 	  @Test(priority=0)
       public void OperationInStack() 
       {
 		stackPage = new StackPage(driver);
-      	stackPage.getStartedBtn();
+      	//stackPage.getStartedBtn();
       	stackPage.OperationInStackBtn();
       	String title = driver.getTitle();
     	Assert.assertEquals(title,"Operations in Stack");
@@ -64,8 +69,8 @@ public class StackTest  extends BaseTest {
       
       @AfterClass
 		public void logout() {
-		//SignIn.clicklogout();
-			driver.quit();
+		
+    	  teardown();
 		}
         
       

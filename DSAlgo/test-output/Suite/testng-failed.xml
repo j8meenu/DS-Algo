@@ -6,6 +6,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="numpyninja.Tests.ResisterTest">
+        <methods>
+          <include name="RegisterWithEmptyField"/>
+          <include name="EmptyConfirmPassword"/>
+          <include name="EmptyPasswordTest"/>
+          <include name="logOut"/>
+          <include name="setUp"/>
+          <include name="DiffPassword"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.ResisterTest -->
       <class name="numpyninja.Tests.HomeTest">
         <methods>
           <include name="logout"/>
@@ -13,6 +23,26 @@
           <include name="beforetest"/>
         </methods>
       </class> <!-- numpyninja.Tests.HomeTest -->
+      <class name="numpyninja.Tests.GraphTest">
+        <methods>
+          <include name="practicequestions"/>
+          <include name="graphRep"/>
+          <include name="Graph"/>
+          <include name="graphtopic"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.GraphTest -->
+      <class name="numpyninja.Tests.QueueTest">
+        <methods>
+          <include name="queueoperations"/>
+          <include name="practicequestions"/>
+          <include name="setUp"/>
+          <include name="impqueuebypython"/>
+          <include name="impusingarray"/>
+          <include name="impusingcollectionsdeque"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.QueueTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

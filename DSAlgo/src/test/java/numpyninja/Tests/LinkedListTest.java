@@ -7,11 +7,11 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.LinkedListPage;
 import numpyninja.Pages.SignInPage;
 
@@ -19,19 +19,24 @@ import numpyninja.Pages.SignInPage;
 public class LinkedListTest extends BaseTest {
 	
 	 LinkedListPage linkedList;
-	 HomePage homePage;
-	 SignInPage SignIn;
+	 HomePage home;
+	 SignInPage signIn;
 	 
         @BeforeClass
 		public void setUp() throws IOException  {
-	    
-          initDriver();
-	      driver.get(loginUrl);
-	      SignInPage SignIn =new SignInPage(driver);
-	      SignIn.login(UserName, Password);
-	      SignIn.clickLogin();  
-	      homePage= new HomePage(driver);
-	      homePage.getstartedLinkedlistclick();     
+        	
+        	LandingPage landingPage = this.launchApplication();
+			landingPage.getStarted();	
+			
+		    home= new HomePage(driver);
+		    home.signinvalidation();
+	        
+		    SignInPage signIn =new SignInPage(driver);
+	        signIn.login(UserName, Password);
+	        signIn.clickLogin(); 
+	          
+	        home.getstartedLinkedlistclick(); 
+	         
 	  }
         @Test(priority = 0)
         public void introLinkedlist()  {
@@ -99,9 +104,10 @@ public class LinkedListTest extends BaseTest {
         
         @AfterClass
     	public void logout() {
-    		
+    	
         	//SignIn.clicklogout();
-    		driver.quit();
+    	
+        	teardown();
     	}
          
 }

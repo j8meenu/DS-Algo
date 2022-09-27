@@ -8,32 +8,41 @@ import org.testng.annotations.Test;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.ArrayPage;
 import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 
 
 public class ArrayTest extends BaseTest {
 	ArrayPage array;
-	HomePage home;
-	SignInPage SignIn;
+	SignInPage signIn;
 	
 	@BeforeClass
 	public void beforetest() throws IOException {
 		
-			initDriver();
-	      driver.get(homeUrl);
+		LandingPage landingPage = this.launchApplication();
+		landingPage.getStarted();	
+		
+	    HomePage home= new HomePage(driver);
+	    home.signinvalidation();
+        
+	    SignInPage signIn =new SignInPage(driver);
+        signIn.login(UserName, Password);
+        signIn.clickLogin(); 
+        
+        home.getStartedArrayClick();
 	}
-	
+	/*
 	@Test(priority=0)
 	public void introArrayPage() {
 	home=new HomePage(driver);
-home.signinvalidation();
-SignIn=new SignInPage(driver);
-	SignIn.login(UserName, Password);
+     home.signinvalidation();
+     SignIn=new SignInPage(driver);
+	SignIn.login(userName, password);
 	SignIn.clickLogin();
 home.getStartedArrayClick();
 String title = driver.getTitle();
 	assertTrue(true, title);
-}
+} */
 	
 	@Test(priority=1)
 	public void ArraysInPythonClick() {
@@ -128,9 +137,7 @@ String title = driver.getTitle();
 		 }
 	@AfterClass
 	public void logout() {
-		
-		//SignIn.clicklogout();
-		driver.quit();
+		teardown();
 	}
 
 	}

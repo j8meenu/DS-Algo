@@ -2,42 +2,38 @@ package numpyninja.Resources;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Date;
+
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
+
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import io.qameta.allure.Attachment;
 import numpyninja.Base.BaseTest;
-import numpyninja.util.GenericClass;
 
 public class listnerclass extends BaseTest implements ITestListener {
 	
 	
 	public void beforeTest() throws IOException {
 		initDriver();
-	}	
+		
+			}	
 	
 
  
 	public void FailedScreenshot(String testMethodName) throws IOException {
 		
+		
+		
+		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen.png"));
 
-File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-Date d = new Date();
-String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
-FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\srcshot\\screenshot" + testMethodName + "_" + TimeStamp
-		+ ".png"));		
+				
 }
-  
+ 
+ 
     public void onTestFailure(ITestResult result)
     {
    	System.out.println(" test has failed *****");
@@ -50,12 +46,38 @@ catch(Exception e)
 	e.printStackTrace();
 }
     }
-    @AfterTest
-    public void aftertest() {
-    	driver.quit();
-    }
 
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //    @AfterTest
+//    public void aftertest() {
+//    	driver.quit();
+//    }
 
 
 
@@ -95,7 +117,11 @@ catch(Exception e)
     
     
     
-    
+  //File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  //Date d = new Date();
+  //String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
+  //FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\srcshot\\screenshot" + testMethodName + "_" + TimeStamp
+//  		+ ".png"));
     
     
     

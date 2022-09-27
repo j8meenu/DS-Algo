@@ -23,7 +23,7 @@ import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 import numpyninja.Resources.listnerclass;
-@Listeners({listnerclass.class})
+@Listeners(numpyninja.Resources.listnerclass.class)
 public class HomeTest extends BaseTest {
 	
 	//WebDriver driver;
@@ -50,7 +50,7 @@ public class HomeTest extends BaseTest {
 
 	@Test(priority=2)
 	public void DSgetstarted() {
-	home=new HomePage(driver);
+	//home=new HomePage(driver);
 	home.getstartedDatastructureclick();;
 		String actualurl= "https://dsportalapp.herokuapp.com/data-structures-introduction/";
 	String expectedurl="https://dsportalapp.herokuapp.com/home";
@@ -121,57 +121,3 @@ public class HomeTest extends BaseTest {
 		driver.quit();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//initDriver();
-		//driver.get(homeUrl);
-
-
-
-//String actualurl= "https://dsportalapp.herokuapp.com/data-structures-introduction/";
-//String expectedurl="https://dsportalapp.herokuapp.com/home";
-//		Assert.assertEquals(actualurl, expectedurl);
-
-
-//	if(actualurl.equalsIgnoreCase(expectedurl)) { 
-//	System.out.println("you are not logged in"); }
-//else { System.out.println("you are  logged in"); }
-
-
-
-//@Test(priority=11)
-//public void SigningIn() {
-//	home=new HomePage(driver);
-//home.signinvalidation();
-//SignIn=new SignInPage(driver);
-//	SignIn.login(UserName, Password);
-//	SignIn.clickLogin();
-//}
-//@Listeners({listnerclass.class})
-
-

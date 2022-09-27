@@ -1,54 +1,48 @@
 package numpyninja.Tests;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
+import numpyninja.Pages.HomePage;
+import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.QueuePage;
 import numpyninja.Pages.SignInPage;
 public class QueueTest extends BaseTest{
 	    
 	QueuePage objqueue;
-	SignInPage SignIn;
-
-    
+  
 //      @BeforeClass
-//		public void queue() {
-//    	  WebDriverManager.chromedriver().setup();
-//		    driver= new ChromeDriver();
-//				driver.get("https://dsportalapp.herokuapp.com/login");
-//				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//				SignIn =new SignInPage(driver);
-//				SignIn.login("Nenyarajesh","Pinky1213");
-//		       	SignIn.clickLogin();
-//		       	objqueue =new QueuePage(driver);
-//      }
-
+//      public void setUp() throws IOException  {
+//  	    
+//    	initDriver();
+//  		driver.get(loginUrl);     
+//	      SignInPage SignIn =new SignInPage(driver);
+//	      SignIn.login(UserName, Password);
+//	      SignIn.clickLogin();
+//	      objqueue =new QueuePage(driver);
+//
+//		       objqueue.getstartedqueue();
+    
       @BeforeClass
       public void setUp() throws IOException  {
   	    
-    	initDriver();
-  		driver.get(loginUrl);     
-	      SignInPage SignIn =new SignInPage(driver);
-	      SignIn.login(UserName, Password);
-	      SignIn.clickLogin();
-	      objqueue =new QueuePage(driver);
-
-		       objqueue.getstartedqueue();
+       LandingPage landingPage = this.launchApplication();
+   	   landingPage.getStarted();
+   		
+   	    HomePage home= new HomePage(driver);
+   	    home.signinvalidation();
+           
+   	    SignInPage signIn =new SignInPage(driver);
+           signIn.login(UserName, Password);
+           signIn.clickLogin(); 
+           
+           home.getstartedQueueclick();
 		       	
 		}
 				@Test(priority=0)
@@ -96,8 +90,6 @@ public class QueueTest extends BaseTest{
 				
 				@AfterClass
 				public void logout() {
-					SignInPage SignIn =new SignInPage(driver);
-					SignIn.clicklogout();
-					driver.quit();
+					teardown();
 				}
 }

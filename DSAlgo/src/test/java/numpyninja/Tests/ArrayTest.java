@@ -139,7 +139,6 @@ String title = driver.getTitle();
 		 }
 	@AfterClass
 	public void logout() {
-		
 		teardown();
 	}
 

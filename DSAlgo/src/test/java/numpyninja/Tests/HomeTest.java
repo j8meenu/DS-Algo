@@ -11,7 +11,6 @@ import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 
-
 public class HomeTest extends BaseTest {
 	
 	//WebDriver driver;

@@ -12,7 +12,6 @@ import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
 import numpyninja.util.ExcelReader;
 
-
 public class SignInTest extends BaseTest {
 
 	@BeforeClass
@@ -25,6 +24,7 @@ public class SignInTest extends BaseTest {
 	  } 
 			 @Test
 			  public void dslogin() {
+
 			    	  SignInPage SignIn =new SignInPage(driver);
 			    	   String xl ="./src/test/java/Excel/SignInTest.xlsx";
 			           String Sheet = "Login";

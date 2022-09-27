@@ -14,7 +14,6 @@ import numpyninja.Pages.LandingPage;
 
 public class LandingPageTest extends BaseTest {
 
-
 	@Test
 	public void goToPage() throws IOException {
 				

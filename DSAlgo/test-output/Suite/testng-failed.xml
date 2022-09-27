@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="numpyninja.Resources.listnerclass"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="numpyninja.Tests.GraphTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="practicequestions"/>
+          <include name="graphRep"/>
+          <include name="graphtopic"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.GraphTest -->
+      <class name="numpyninja.Tests.DataStructureTest">
+        <methods>
+          <include name="beforetest"/>
+          <include name="TryEditor"/>
+          <include name="introDatastructure"/>
+          <include name="TimeComplexity"/>
+          <include name="logout"/>
+          <include name="PracticeQuestion"/>
+          <include name="TryHere"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.DataStructureTest -->
       <class name="numpyninja.Tests.HomeTest">
         <methods>
           <include name="logout"/>
@@ -10,6 +33,56 @@
           <include name="beforetest"/>
         </methods>
       </class> <!-- numpyninja.Tests.HomeTest -->
+      <class name="numpyninja.Tests.StackTest">
+        <methods>
+          <include name="OperationInStack"/>
+          <include name="setUp"/>
+          <include name="implementation"/>
+          <include name="logout"/>
+          <include name="practiceQuestion1"/>
+          <include name="applications"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.StackTest -->
+      <class name="numpyninja.Tests.QueueTest">
+        <methods>
+          <include name="queueoperations"/>
+          <include name="practicequestions"/>
+          <include name="setUp"/>
+          <include name="impusingarray"/>
+          <include name="impqueuebypython"/>
+          <include name="impusingcollectionsdeque"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.QueueTest -->
+      <class name="numpyninja.Tests.LinkedListTest">
+        <methods>
+          <include name="creatingLinkedList"/>
+          <include name="setUp"/>
+          <include name="typeOfLinkedList"/>
+          <include name="traversal"/>
+          <include name="practiceQuestion"/>
+          <include name="deletion"/>
+          <include name="introLinkedlist"/>
+          <include name="implementLinkedList"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.LinkedListTest -->
+      <class name="numpyninja.Tests.ArrayTest">
+        <methods>
+          <include name="beforetest"/>
+          <include name="FindNumbersClick"/>
+          <include name="PracticequestionsClick"/>
+          <include name="ArraysusinglistClick"/>
+          <include name="BasicoperationsClick"/>
+          <include name="logout"/>
+          <include name="MaxConsecutiveOnesClick"/>
+          <include name="SquaresTabClick"/>
+          <include name="SearchTheArrayClick"/>
+          <include name="ArraysInPythonClick"/>
+          <include name="introArrayPage"/>
+          <include name="ApplicationofarraysClick"/>
+        </methods>
+      </class> <!-- numpyninja.Tests.ArrayTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

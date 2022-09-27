@@ -2,6 +2,7 @@ package numpyninja.Resources;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -16,32 +17,49 @@ import org.testng.annotations.Test;
 
 import io.qameta.allure.Attachment;
 import numpyninja.Base.BaseTest;
+import numpyninja.util.GenericClass;
 
-public class listnerclass extends BaseTest {
+public class listnerclass extends BaseTest implements ITestListener {
 	
-	@BeforeTest
+	
 	public void beforeTest() throws IOException {
 		initDriver();
-		driver.get(baseUrl);
+	}	
 	
-	}
-	@Test
-	public void f() throws IOException {
-		takeSnapShot("SnapShot", driver);
-}
+	//}
+//	@Test
+//	public void f() throws IOException {
+//		takeSnapShot("SnapShot", driver);
+//}
+//
+//		
+//
+//	 
+// public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
+//		//TakesScreenshot scrShot=((TakeScreenshot)driver);
+//		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
+//		}
 
+ 
+	public void FailedScreenshot(String testMethodName) throws IOException {
 		
 
-	 
- public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
-		//TakesScreenshot scrShot=((TakeScreenshot)driver);
-		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
-		}
+File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+Date d = new Date();
+String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
+FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\" + testMethodName + "_" + TimeStamp
+		+ ".png"));
 
-@AfterTest
-public void aftertest() {
-	driver.quit();
+		//File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		//try {
+			//FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo" + 
+			//testMethodName + "_" + TimeStamp + ".png"));
+		//} catch (IOException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+		
 }
  
  
@@ -51,10 +69,27 @@ public void aftertest() {
  
  
  
- 
- //	 @Override
-//	    public void onTestFailure(ITestResult result) {
-//	    	System.out.println("***** Error "+result.getName()+" test has failed *****");
+    public void onTestFailure(ITestResult result)
+    {
+   	System.out.println(" test has failed *****");
+try
+{
+FailedScreenshot(result.getName());
+}
+catch(Exception e)
+{
+	e.printStackTrace();
+}
+    }
+    @AfterTest
+    public void aftertest() {
+    	driver.quit();
+    }
+
+
+
+
+
 //	    	String methodName=result.getName().toString().trim();
 //	        ITestContext context = result.getTestContext();
 //	       WebDriver driver = (WebDriver)context.getAttribute("driver");

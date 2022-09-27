@@ -89,15 +89,24 @@ public class LinkedListTest extends BaseTest {
         public void practiceQuestion() throws InterruptedException {
         	
         	linkedList.practiceQuestionBtn(); 
-        	driver.navigate().back();
-        	driver.navigate().back();
+        	
         	String title = driver.getTitle();
         	Assert.assertEquals(title,"Practice Questions");
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
+        	driver.navigate().back();
         }   
         
         @AfterClass
     	public void logout() {
-    		
+    	
+        	//SignIn.clicklogout();
+    	
         	teardown();
     	}
          

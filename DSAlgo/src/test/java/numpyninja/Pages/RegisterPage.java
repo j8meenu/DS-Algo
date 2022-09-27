@@ -9,19 +9,13 @@ import numpyninja.Base.BaseTest;
 
 public class RegisterPage extends BaseTest {
 	 WebDriver driver;
-	
-	 @FindBy(xpath ="//input[@type='submit']")
-    WebElement RegisterBtn;
-    
-    @FindBy(id ="id_username")  WebElement UserName;
-    
-    @FindBy(id ="id_password1")  WebElement Password;
-     
-    @FindBy(id = "id_password2")  WebElement ConfirmPassword;
-      
-    @FindBy(xpath = "//div[contains(text(),'password_mismatch:')]")  WebElement alertMsg;
-      
-    @FindBy(xpath ="//div[contains(text(),'New Account Created.')]")  WebElement registerAlert;
+	 
+	 @FindBy(xpath ="//input[@type='submit']")     WebElement RegisterBtn;
+     @FindBy(id ="id_username")           WebElement UserName;
+     @FindBy(id ="id_password1")            WebElement Password;
+     @FindBy(id = "id_password2")  WebElement ConfirmPassword;
+     @FindBy(xpath = "//div[contains(text(),'password_mismatch:')]")  WebElement alertMsg;
+     @FindBy(xpath ="//div[contains(text(),'New Account Created.')]")  WebElement registerAlert;
     
     public RegisterPage(WebDriver driver) {
 	 		
@@ -37,23 +31,17 @@ public class RegisterPage extends BaseTest {
     public void EmptyPassword(String Uname) {
    	
    	 UserName.sendKeys(Uname);
-   	 UserName.clear();
     }
     public void EmptyConfirmPassword(String Uname, String Pass) {
    	 
    	 UserName.sendKeys(Uname);
-   	 UserName.clear();
    	 Password.sendKeys(Pass);
-   	 Password.clear();
     }
     public void DiffPassword(String Uname, String Pass, String ConPass) {
    	
    	 UserName.sendKeys(Uname);
-   	 //UserName.clear();
    	 Password.sendKeys(Pass);
-   	 //Password.clear();
    	 ConfirmPassword.sendKeys(ConPass); 
-   	// ConfirmPassword.clear();
      }
     public void Register(String Uname, String Pass, String ConPass) {
    	

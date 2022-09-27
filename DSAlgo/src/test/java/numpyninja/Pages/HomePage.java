@@ -8,7 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import numpyninja.Base.BaseTest;
 
 public class HomePage extends BaseTest  {
+	
 	 WebDriver driver;
+	 RegisterPage registerPage;
 	
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -27,66 +29,81 @@ public class HomePage extends BaseTest  {
 	@FindBy(xpath="//div[@class='alert alert-primary']")public static WebElement alertmessage1;
 	@FindBy(xpath="//a[text()='Sign in']")public static WebElement signinbutton;
 	@FindBy(xpath="//a[text()=' Register ']")public static WebElement registerbutton;
+	@FindBy(xpath = "//div[contains(text(),'You are not logged in')]")    public static WebElement dtAlertMsg;
 	//@FindBy(xpath="//a[@class='navbar-brand']")public static WebElement homebutton;
 	//@FindBy(xpath="//button[@class='btn']")public static WebElement getstartedbutton;
 	
 //	@FindBy(xpath="//div[@class='col'][1]//a[@class='align-self-end btn btn-lg btn-block btn-primary']")public static WebElement DSgetstarted;
 	//@FindBy(xpath="//div[@class='col'][2]//a[@class='align-self-end btn btn-lg btn-block btn-primary']")public static WebElement arraygetstartedbtn;
-public static void dropdown() {
+public void dropdown() {
 	dropdown.click();
 	arraybutton.click();
 //String alert= alertmessage.getText();
 // System.out.println("Alert:" + alert);
 }
 
-
-public static void getstartedDatastructureclick() {
+public void getstartedDatastructureclick() {
 	dataStructuregetStartedbtn.click();
 
 }
 
-public static void getStartedArrayClick(){	
+public void getStartedArrayClick(){	
  arraygetstartedbtn.click();
 	//String alert1=alertmessage1.getText();
 	//System.out.println("AlertMessage:" + alert1);
 }
 
-public static void getstartedLinkedlistclick() {
+public void getstartedLinkedlistclick() {
 	linkedListgetStarted.click();
 
 }
 
-
-
-public static void getstartedStackclick() {
+public void getstartedStackclick() {
 	stackGetstaetedbtn.click();
 
 }
-public static void getstartedQueueclick() {
+public void getstartedQueueclick() {
 	queueGetstartedbtn.click();
 
 }
 
-public static void getstartedTreeclick() {
+public void getstartedTreeclick() {
 	treeGetstartedbtn.click();
 
 }
 
-public static void getstartedGraphclick() {
+public void getstartedGraphclick() {
 	graphGetstartedbtn.click();
 
 }
 
-public static void signinvalidation() {
+public void signinvalidation() {
 	signinbutton.click();
 	//driver.navigate().back();
 	
 }
-public static void registervalidation() {
+public RegisterPage registervalidation() {
 				registerbutton.click();
+				return registerPage;
 
 }	
 
+
+public boolean dataStructureAlert() {
+	
+		boolean assertFlag;
+		
+			if((dtAlertMsg.getText()).equals("You are not logged in") )
+			{ 
+			 assertFlag = true;  		
+			}
+			else 
+			{ 
+			 assertFlag = false;
+			}
+		
+	   return assertFlag;
+}
 
 
 }

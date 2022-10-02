@@ -1,21 +1,379 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="55" passed="54" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T14:41:00 EDT" name="Default suite" finished-at="2022-09-27T14:41:05 EDT" duration-ms="4979">
+  <suite started-at="2022-10-02T00:21:59 EDT" name="Suite" finished-at="2022-10-02T00:24:24 EDT" duration-ms="145013">
     <groups>
     </groups>
-    <test started-at="2022-09-27T14:41:00 EDT" name="Default test" finished-at="2022-09-27T14:41:05 EDT" duration-ms="4979">
-      <class name="numpyninja.Tests.LandingPageTest">
-        <test-method signature="goToPage()[pri:0, instance:numpyninja.Tests.LandingPageTest@5b247367]" started-at="2022-09-27T14:41:00 EDT" name="goToPage" finished-at="2022-09-27T14:41:05 EDT" duration-ms="4524" status="PASS">
+    <test started-at="2022-10-02T00:21:59 EDT" name="Test" finished-at="2022-10-02T00:24:24 EDT" duration-ms="145013">
+      <class name="numpyninja.Tests.TreeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:23:56 EDT" name="setUp" finished-at="2022-10-02T00:24:00 EDT" duration-ms="3855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getOverviewOfTreesLink()[pri:0, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:00 EDT" name="getOverviewOfTreesLink" finished-at="2022-10-02T00:24:03 EDT" duration-ms="2643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOverviewOfTreesLink -->
+        <test-method signature="getTerminologiesLink()[pri:1, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:03 EDT" name="getTerminologiesLink" finished-at="2022-10-02T00:24:04 EDT" duration-ms="1014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTerminologiesLink -->
+        <test-method signature="getTypesOfTreesLink()[pri:2, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:04 EDT" name="getTypesOfTreesLink" finished-at="2022-10-02T00:24:05 EDT" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTypesOfTreesLink -->
+        <test-method signature="getTreeTraversalsLink()[pri:3, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:05 EDT" name="getTreeTraversalsLink" finished-at="2022-10-02T00:24:06 EDT" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTreeTraversalsLink -->
+        <test-method signature="getTraversalsIllustrationLink()[pri:4, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:06 EDT" name="getTraversalsIllustrationLink" finished-at="2022-10-02T00:24:07 EDT" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTraversalsIllustrationLink -->
+        <test-method signature="getBinaryTreesLink()[pri:5, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:07 EDT" name="getBinaryTreesLink" finished-at="2022-10-02T00:24:08 EDT" duration-ms="1144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBinaryTreesLink -->
+        <test-method signature="getTypesOfBinaryTreesLink()[pri:6, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:08 EDT" name="getTypesOfBinaryTreesLink" finished-at="2022-10-02T00:24:10 EDT" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTypesOfBinaryTreesLink -->
+        <test-method signature="getImplementaionInPythonLink()[pri:7, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:10 EDT" name="getImplementaionInPythonLink" finished-at="2022-10-02T00:24:11 EDT" duration-ms="1152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getImplementaionInPythonLink -->
+        <test-method signature="getBinaryTreeTraversalsLink()[pri:8, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:11 EDT" name="getBinaryTreeTraversalsLink" finished-at="2022-10-02T00:24:12 EDT" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBinaryTreeTraversalsLink -->
+        <test-method signature="getImplementationOfbinaryTreeLink()[pri:9, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:12 EDT" name="getImplementationOfbinaryTreeLink" finished-at="2022-10-02T00:24:13 EDT" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getImplementationOfbinaryTreeLink -->
+        <test-method signature="getApplicationOfbinaryTreeLink()[pri:10, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:13 EDT" name="getApplicationOfbinaryTreeLink" finished-at="2022-10-02T00:24:14 EDT" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApplicationOfbinaryTreeLink -->
+        <test-method signature="getBinarySearchTreesLink()[pri:11, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:14 EDT" name="getBinarySearchTreesLink" finished-at="2022-10-02T00:24:16 EDT" duration-ms="1812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBinarySearchTreesLink -->
+        <test-method signature="getImplementationOfBSTLink()[pri:12, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:16 EDT" name="getImplementationOfBSTLink" finished-at="2022-10-02T00:24:17 EDT" duration-ms="959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getImplementationOfBSTLink -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.TreeTest@68c9d179]" started-at="2022-10-02T00:24:17 EDT" name="logout" finished-at="2022-10-02T00:24:17 EDT" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.TreeTest -->
+      <class name="numpyninja.Tests.StackTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:39 EDT" name="setUp" finished-at="2022-10-02T00:23:43 EDT" duration-ms="3767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OperationInStack()[pri:0, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:43 EDT" name="OperationInStack" finished-at="2022-10-02T00:23:45 EDT" duration-ms="2499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OperationInStack -->
+        <test-method signature="implementation()[pri:1, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:45 EDT" name="implementation" finished-at="2022-10-02T00:23:46 EDT" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implementation -->
+        <test-method signature="applications()[pri:2, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:46 EDT" name="applications" finished-at="2022-10-02T00:23:47 EDT" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applications -->
+        <test-method signature="practiceQuestion1()[pri:3, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:47 EDT" name="practiceQuestion1" finished-at="2022-10-02T00:23:47 EDT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceQuestion1 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.StackTest@4b8d604b]" started-at="2022-10-02T00:23:47 EDT" name="logout" finished-at="2022-10-02T00:23:47 EDT" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.StackTest -->
+      <class name="numpyninja.Tests.ResisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:27 EDT" name="setUp" finished-at="2022-10-02T00:22:31 EDT" duration-ms="3702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="RegisterWithEmptyField()[pri:0, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:31 EDT" name="RegisterWithEmptyField" finished-at="2022-10-02T00:22:31 EDT" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterWithEmptyField -->
+        <test-method signature="EmptyPasswordTest()[pri:1, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:31 EDT" name="EmptyPasswordTest" finished-at="2022-10-02T00:22:32 EDT" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyPasswordTest -->
+        <test-method signature="EmptyConfirmPassword()[pri:2, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:32 EDT" name="EmptyConfirmPassword" finished-at="2022-10-02T00:22:33 EDT" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyConfirmPassword -->
+        <test-method signature="DiffPassword()[pri:3, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:33 EDT" name="DiffPassword" finished-at="2022-10-02T00:22:34 EDT" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DiffPassword -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:numpyninja.Tests.ResisterTest@5b7a7f33]" started-at="2022-10-02T00:22:34 EDT" name="logOut" finished-at="2022-10-02T00:22:35 EDT" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- numpyninja.Tests.ResisterTest -->
+      <class name="numpyninja.Tests.ArrayTest">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:22:56 EDT" name="beforetest" finished-at="2022-10-02T00:23:02 EDT" duration-ms="6005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="ArraysInPythonClick()[pri:1, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:02 EDT" name="ArraysInPythonClick" finished-at="2022-10-02T00:23:07 EDT" duration-ms="5066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ArraysInPythonClick -->
+        <test-method signature="ArraysusinglistClick()[pri:2, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:07 EDT" name="ArraysusinglistClick" finished-at="2022-10-02T00:23:09 EDT" duration-ms="1410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ArraysusinglistClick -->
+        <test-method signature="BasicoperationsClick()[pri:3, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:09 EDT" name="BasicoperationsClick" finished-at="2022-10-02T00:23:11 EDT" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicoperationsClick -->
+        <test-method signature="ApplicationofarraysClick()[pri:4, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:11 EDT" name="ApplicationofarraysClick" finished-at="2022-10-02T00:23:12 EDT" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationofarraysClick -->
+        <test-method signature="PracticequestionsClick()[pri:5, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:12 EDT" name="PracticequestionsClick" finished-at="2022-10-02T00:23:12 EDT" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticequestionsClick -->
+        <test-method signature="SearchTheArrayClick()[pri:6, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:12 EDT" name="SearchTheArrayClick" finished-at="2022-10-02T00:23:14 EDT" duration-ms="1364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTheArrayClick -->
+        <test-method signature="MaxConsecutiveOnesClick()[pri:7, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:14 EDT" name="MaxConsecutiveOnesClick" finished-at="2022-10-02T00:23:15 EDT" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MaxConsecutiveOnesClick -->
+        <test-method signature="FindNumbersClick()[pri:8, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:15 EDT" name="FindNumbersClick" finished-at="2022-10-02T00:23:16 EDT" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindNumbersClick -->
+        <test-method signature="SquaresTabClick()[pri:9, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:16 EDT" name="SquaresTabClick" finished-at="2022-10-02T00:23:17 EDT" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SquaresTabClick -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.ArrayTest@57bc27f5]" started-at="2022-10-02T00:23:17 EDT" name="logout" finished-at="2022-10-02T00:23:17 EDT" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.ArrayTest -->
+      <class name="numpyninja.Tests.DataStructureTest">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:47 EDT" name="beforetest" finished-at="2022-10-02T00:22:52 EDT" duration-ms="5585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="TimeComplexity()[pri:1, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:52 EDT" name="TimeComplexity" finished-at="2022-10-02T00:22:53 EDT" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TimeComplexity -->
+        <test-method signature="PracticeQuestion()[pri:2, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:53 EDT" name="PracticeQuestion" finished-at="2022-10-02T00:22:53 EDT" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestion -->
+        <test-method signature="TryHere()[pri:3, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:53 EDT" name="TryHere" finished-at="2022-10-02T00:22:55 EDT" duration-ms="1750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TryHere -->
+        <test-method signature="TryEditor()[pri:4, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:55 EDT" name="TryEditor" finished-at="2022-10-02T00:22:56 EDT" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TryEditor -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.DataStructureTest@5c7933ad]" started-at="2022-10-02T00:22:56 EDT" name="logout" finished-at="2022-10-02T00:22:56 EDT" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.DataStructureTest -->
+      <class name="numpyninja.Tests.SignInTest">
+        <test-method is-config="true" signature="goToPage()[pri:0, instance:numpyninja.Tests.SignInTest@790da477]" started-at="2022-10-02T00:22:35 EDT" name="goToPage" finished-at="2022-10-02T00:22:39 EDT" duration-ms="4679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPage -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:numpyninja.Tests.LandingPageTest@5b247367]" started-at="2022-09-27T14:41:05 EDT" name="browserclose" finished-at="2022-09-27T14:41:05 EDT" duration-ms="260" status="PASS">
+        <test-method signature="dslogin()[pri:0, instance:numpyninja.Tests.SignInTest@790da477]" started-at="2022-10-02T00:22:39 EDT" name="dslogin" finished-at="2022-10-02T00:22:46 EDT" duration-ms="6431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dslogin -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.SignInTest@790da477]" started-at="2022-10-02T00:22:46 EDT" name="logout" finished-at="2022-10-02T00:22:47 EDT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.SignInTest -->
+      <class name="numpyninja.Tests.HomeTest">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:18 EDT" name="beforetest" finished-at="2022-10-02T00:22:24 EDT" duration-ms="6132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="dropdownclick()[pri:1, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:24 EDT" name="dropdownclick" finished-at="2022-10-02T00:22:25 EDT" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownclick -->
+        <test-method signature="DSgetstarted()[pri:2, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:25 EDT" name="DSgetstarted" finished-at="2022-10-02T00:22:25 EDT" duration-ms="482" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/data-structures-introduction/]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at numpyninja.Tests.HomeTest.DSgetstarted(HomeTest.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DSgetstarted -->
+        <test-method signature="SigninValidation()[pri:9, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:26 EDT" name="SigninValidation" finished-at="2022-10-02T00:22:26 EDT" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SigninValidation -->
+        <test-method signature="RegisterValidation()[pri:10, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:26 EDT" name="RegisterValidation" finished-at="2022-10-02T00:22:27 EDT" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterValidation -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.HomeTest@38467116]" started-at="2022-10-02T00:22:27 EDT" name="logout" finished-at="2022-10-02T00:22:27 EDT" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.HomeTest -->
+      <class name="numpyninja.Tests.GraphTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.GraphTest@d554c5f]" started-at="2022-10-02T00:24:17 EDT" name="setUp" finished-at="2022-10-02T00:24:20 EDT" duration-ms="3034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="graphtopic()[pri:0, instance:numpyninja.Tests.GraphTest@d554c5f]" started-at="2022-10-02T00:24:20 EDT" name="graphtopic" finished-at="2022-10-02T00:24:22 EDT" duration-ms="1631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- graphtopic -->
+        <test-method signature="graphRep()[pri:1, instance:numpyninja.Tests.GraphTest@d554c5f]" started-at="2022-10-02T00:24:22 EDT" name="graphRep" finished-at="2022-10-02T00:24:23 EDT" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- graphRep -->
+        <test-method signature="practicequestions()[pri:2, instance:numpyninja.Tests.GraphTest@d554c5f]" started-at="2022-10-02T00:24:23 EDT" name="practicequestions" finished-at="2022-10-02T00:24:24 EDT" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practicequestions -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.GraphTest@d554c5f]" started-at="2022-10-02T00:24:24 EDT" name="logout" finished-at="2022-10-02T00:24:24 EDT" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.GraphTest -->
+      <class name="numpyninja.Tests.LandingPageTest">
+        <test-method signature="goToPage()[pri:0, instance:numpyninja.Tests.LandingPageTest@70cf32e3]" started-at="2022-10-02T00:21:59 EDT" name="goToPage" finished-at="2022-10-02T00:22:16 EDT" duration-ms="17104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPage -->
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:numpyninja.Tests.LandingPageTest@70cf32e3]" started-at="2022-10-02T00:22:16 EDT" name="browserclose" finished-at="2022-10-02T00:22:18 EDT" duration-ms="1349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- numpyninja.Tests.LandingPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="numpyninja.Tests.QueueTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:47 EDT" name="setUp" finished-at="2022-10-02T00:23:50 EDT" duration-ms="3153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="impqueuebypython()[pri:0, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:50 EDT" name="impqueuebypython" finished-at="2022-10-02T00:23:52 EDT" duration-ms="2015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- impqueuebypython -->
+        <test-method signature="impusingcollectionsdeque()[pri:1, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:52 EDT" name="impusingcollectionsdeque" finished-at="2022-10-02T00:23:53 EDT" duration-ms="889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- impusingcollectionsdeque -->
+        <test-method signature="impusingarray()[pri:2, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:53 EDT" name="impusingarray" finished-at="2022-10-02T00:23:54 EDT" duration-ms="898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- impusingarray -->
+        <test-method signature="queueoperations()[pri:3, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:54 EDT" name="queueoperations" finished-at="2022-10-02T00:23:55 EDT" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queueoperations -->
+        <test-method signature="practicequestions()[pri:4, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:55 EDT" name="practicequestions" finished-at="2022-10-02T00:23:56 EDT" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practicequestions -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.QueueTest@5e7cd6cc]" started-at="2022-10-02T00:23:56 EDT" name="logout" finished-at="2022-10-02T00:23:56 EDT" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.QueueTest -->
+      <class name="numpyninja.Tests.LinkedListTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:17 EDT" name="setUp" finished-at="2022-10-02T00:23:24 EDT" duration-ms="6439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="introLinkedlist()[pri:0, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:24 EDT" name="introLinkedlist" finished-at="2022-10-02T00:23:31 EDT" duration-ms="7266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- introLinkedlist -->
+        <test-method signature="creatingLinkedList()[pri:1, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:31 EDT" name="creatingLinkedList" finished-at="2022-10-02T00:23:32 EDT" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingLinkedList -->
+        <test-method signature="typeOfLinkedList()[pri:2, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:32 EDT" name="typeOfLinkedList" finished-at="2022-10-02T00:23:34 EDT" duration-ms="1877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- typeOfLinkedList -->
+        <test-method signature="implementLinkedList()[pri:3, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:34 EDT" name="implementLinkedList" finished-at="2022-10-02T00:23:35 EDT" duration-ms="1126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implementLinkedList -->
+        <test-method signature="traversal()[pri:4, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:35 EDT" name="traversal" finished-at="2022-10-02T00:23:36 EDT" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traversal -->
+        <test-method signature="deletion()[pri:5, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:36 EDT" name="deletion" finished-at="2022-10-02T00:23:37 EDT" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletion -->
+        <test-method signature="practiceQuestion()[pri:6, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:37 EDT" name="practiceQuestion" finished-at="2022-10-02T00:23:39 EDT" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceQuestion -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:numpyninja.Tests.LinkedListTest@5fb759d6]" started-at="2022-10-02T00:23:39 EDT" name="logout" finished-at="2022-10-02T00:23:39 EDT" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- numpyninja.Tests.LinkedListTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

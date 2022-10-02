@@ -17,40 +17,43 @@ public class QueueTest extends BaseTest{
 	    
 	QueuePage objqueue;
   
-//      @BeforeClass
-//      public void setUp() throws IOException  {
-//  	    
-//    	initDriver();
-//  		driver.get(loginUrl);     
-//	      SignInPage SignIn =new SignInPage(driver);
-//	      SignIn.login(UserName, Password);
-//	      SignIn.clickLogin();
-//	      objqueue =new QueuePage(driver);
-//
-//		       objqueue.getstartedqueue();
-    
       @BeforeClass
       public void setUp() throws IOException  {
   	    
-       LandingPage landingPage = this.launchApplication();
-   	   landingPage.getStarted();
-   		
-   	    HomePage home= new HomePage(driver);
-   	    home.signinvalidation();
-           
-   	    SignInPage signIn =new SignInPage(driver);
-           signIn.login(UserName, Password);
-           signIn.clickLogin(); 
-           
-           home.getstartedQueueclick();
-		       	
-		}
+    	initDriver();
+  		driver.get(loginUrl);     
+	      SignInPage SignIn =new SignInPage(driver);
+	      SignIn.login(UserName, Password);
+	      SignIn.clickLogin();
+	      objqueue =new QueuePage(driver);
+
+		       objqueue.getstartedqueue();
+		      // home.getstartedQueueclick();
+      }
+    
+//      @BeforeClass
+//      public void setUp() throws IOException  {
+//  	    
+//       LandingPage landingPage = this.launchApplication();
+//   	   landingPage.getStarted();
+//   		
+//   	    HomePage home= new HomePage(driver);
+//   	    home.signinvalidation();
+//           
+//   	    SignInPage signIn =new SignInPage(driver);
+//           signIn.login(UserName, Password);
+//           signIn.clickLogin(); 
+//           
+//           home.getstartedQueueclick();
+//		       	
+//		}
 				@Test(priority=0)
 				public void impqueuebypython() {
 					objqueue.impqueuebypython();
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
+					driver.navigate().back();
 					driver.navigate().back();
 				}
 				@Test(priority=1)
@@ -60,6 +63,7 @@ public class QueueTest extends BaseTest{
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
+					driver.navigate().back();
 				}
 				@Test(priority=2)
 				public void impusingarray() {
@@ -67,6 +71,7 @@ public class QueueTest extends BaseTest{
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
+					driver.navigate().back();
 					driver.navigate().back();
 				}
 				@Test(priority=3)
@@ -76,6 +81,7 @@ public class QueueTest extends BaseTest{
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
+					driver.navigate().back();
 				}
 				@Test(priority=4)
 				public void practicequestions() {
@@ -84,7 +90,7 @@ public class QueueTest extends BaseTest{
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 			       	driver.navigate().back();
-			       	//driver.navigate().back();
+			       	driver.navigate().back();
 					
 				}
 				

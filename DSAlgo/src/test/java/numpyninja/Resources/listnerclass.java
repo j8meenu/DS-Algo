@@ -2,7 +2,7 @@ package numpyninja.Resources;
 
 import java.io.File;
 import java.io.IOException;
-
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -28,7 +28,10 @@ public class listnerclass extends BaseTest implements ITestListener {
 		
 		
 		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen.png"));
+		Date d = new Date();
+		String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
+		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\Srcshot\\screenshot" + 
+	  			testMethodName + "_" + TimeStamp + ".png"));
 
 				
 }

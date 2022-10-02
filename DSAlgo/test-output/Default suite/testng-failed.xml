@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="numpyninja.Tests.HomeTest">
+      <class name="numpyninja.Tests.QueueTest">
         <methods>
+          <include name="queueoperations"/>
+          <include name="practicequestions"/>
+          <include name="setUp"/>
+          <include name="impusingarray"/>
+          <include name="impusingcollectionsdeque"/>
           <include name="logout"/>
-          <include name="DSgetstarted"/>
-          <include name="beforetest"/>
         </methods>
-      </class> <!-- numpyninja.Tests.HomeTest -->
+      </class> <!-- numpyninja.Tests.QueueTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

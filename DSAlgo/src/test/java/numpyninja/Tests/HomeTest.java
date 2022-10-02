@@ -61,42 +61,42 @@ public class HomeTest extends BaseTest {
 
 		
 	}
-	@Test(priority=3)
-	public void Arraygetstarted() {
-	home=new HomePage(driver);
-	home.getStartedArrayClick();
-	}
-	
-	@Test(priority=4)
-	public void linkedListgetstarted() {
-	home=new HomePage(driver);
-	home.getstartedLinkedlistclick();
-	}
-	
-	@Test(priority=5)
-	public void stackGetstarted() {
-	home=new HomePage(driver);
-	home.getstartedStackclick();
-	}
-	
-	@Test(priority=6)
-	public void queueGetstarted() {
-	home=new HomePage(driver);
-	home.getstartedQueueclick();
-	}
-	
-	@Test(priority=7)
-	public void treeGetstarted() {
-	home=new HomePage(driver);
-	home.getstartedTreeclick();
-	}
-	
-	
-	@Test(priority=8)
-	public void graphGetstarted() {
-	home=new HomePage(driver);
-	home.getstartedGraphclick();
-	}
+//	@Test(priority=3)
+//	public void Arraygetstarted() {
+//	home=new HomePage(driver);
+//	home.getStartedArrayClick();
+//	}
+//	
+//	@Test(priority=4)
+//	public void linkedListgetstarted() {
+//	home=new HomePage(driver);
+//	home.getstartedLinkedlistclick();
+//	}
+//	
+//	@Test(priority=5)
+//	public void stackGetstarted() {
+//	home=new HomePage(driver);
+//	home.getstartedStackclick();
+//	}
+//	
+//	@Test(priority=6)
+//	public void queueGetstarted() {
+//	home=new HomePage(driver);
+//	home.getstartedQueueclick();
+//	}
+//	
+//	@Test(priority=7)
+//	public void treeGetstarted() {
+//	home=new HomePage(driver);
+//	home.getstartedTreeclick();
+//	}
+//	
+//	
+//	@Test(priority=8)
+//	public void graphGetstarted() {
+//	home=new HomePage(driver);
+//	home.getstartedGraphclick();
+//	}
 	
 		
 	@Test(priority=9)

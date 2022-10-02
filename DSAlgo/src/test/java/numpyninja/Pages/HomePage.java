@@ -84,7 +84,9 @@ public void signinvalidation() {
 }
 public RegisterPage registervalidation() {
 				registerbutton.click();
-				return registerPage;
+				
+				return new RegisterPage(driver);
+				
 
 }	
 

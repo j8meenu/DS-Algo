@@ -22,9 +22,12 @@ public class ResisterTest extends BaseTest {
 	    @BeforeClass
 		public void setUp() throws IOException 
 	    {
-	    	LandingPage landingPage = this.launchApplication();
-			home= landingPage.getStarted();
-			Reg = home.registervalidation();
+	    	initDriver();
+	    	driver.get(registerUrl);
+//	    	LandingPage landingPage = this.launchApplication();
+//			home= landingPage.getStarted();
+//			
+			//home.registervalidation();
 	    } 	    
 	    
 	    @Test(priority = 0)

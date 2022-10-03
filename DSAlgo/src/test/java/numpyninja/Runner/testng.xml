@@ -16,6 +16,7 @@
       <class name="numpyninja.Tests.LinkedListTest"></class>
       <class name="numpyninja.Tests.StackTest"></class>
       <class name="numpyninja.Tests.QueueTest"></class>
+      <class name="numpyninja.Tests.TreeTest"></class>
       <class name="numpyninja.Tests.GraphTest"></class>          
          </classes>
   </test> <!-- Test -->

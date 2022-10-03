@@ -22,9 +22,12 @@ public class ResisterTest extends BaseTest {
 	    @BeforeClass
 		public void setUp() throws IOException 
 	    {
-	    	LandingPage landingPage = this.launchApplication();
-			home= landingPage.getStarted();
-			Reg = home.registervalidation();
+	    	initDriver();
+	    	driver.get(registerUrl);
+//	    	LandingPage landingPage = this.launchApplication();
+//			home= landingPage.getStarted();
+//			
+			//home.registervalidation();
 	    } 	    
 	    
 	    @Test(priority = 0)
@@ -35,13 +38,13 @@ public class ResisterTest extends BaseTest {
         }
         @Test(priority = 1)
         public void EmptyPasswordTest() {
-             Reg.EmptyPassword(userName);
+             Reg.EmptyPassword(UserName);
              Reg.RegisterButtton(); 
              assertEquals(Reg.validationMessage(), "Please fill out this field.");
         }
         @Test(priority = 2)
         public void EmptyConfirmPassword() {
-        	Reg.EmptyConfirmPassword(userName,password);
+        	Reg.EmptyConfirmPassword(UserName,Password);
         	Reg.RegisterButtton();
         	assertEquals(Reg.validationMessage(), "Please fill out this field.");
         }
@@ -49,7 +52,7 @@ public class ResisterTest extends BaseTest {
         
         @Test(priority = 3)
         public void DiffPassword() throws InterruptedException {
-        	Reg.DiffPassword(userName,password,diffconfirmpass);
+        	Reg.DiffPassword(UserName,Password,diffconfirmpass);
         	Reg.RegisterButtton();
         	String alert= Reg.alertMessage("passmismatch");
         	assertEquals(alert, "password_mismatch:The two password fields didn’t match.");

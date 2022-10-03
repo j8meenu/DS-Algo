@@ -31,11 +31,14 @@ public class RegisterPage extends BaseTest {
     public void EmptyPassword(String Uname) {
    	
    	 UserName.sendKeys(Uname);
+   	 UserName.clear();
     }
     public void EmptyConfirmPassword(String Uname, String Pass) {
    	 
    	 UserName.sendKeys(Uname);
+   	 UserName.clear();
    	 Password.sendKeys(Pass);
+   	 Password.clear();
     }
     public void DiffPassword(String Uname, String Pass, String ConPass) {
    	

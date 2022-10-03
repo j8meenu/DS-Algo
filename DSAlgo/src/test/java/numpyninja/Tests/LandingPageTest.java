@@ -1,8 +1,7 @@
 package numpyninja.Tests;
 
 
-
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
@@ -22,10 +21,12 @@ public class LandingPageTest extends BaseTest {
 		assertEquals(landingPage.getTitle(), "NumpyNinja");
 		
 	}
+
 	@AfterClass
     public void browserclose() {
 		 
-    	teardown();
-    }
+  	driver.quit();
+   }
 
 }
+

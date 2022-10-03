@@ -27,7 +27,7 @@ public class StackTest  extends BaseTest {
 		    home.signinvalidation();
 	        
 		    SignInPage signIn =new SignInPage(driver);
-	        signIn.login(userName, password);
+	        signIn.login(UserName, Password);
 	        signIn.clickLogin(); 
 	        
 	        home.getstartedStackclick();

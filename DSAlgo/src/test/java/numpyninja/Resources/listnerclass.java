@@ -7,66 +7,34 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
+
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import io.qameta.allure.Attachment;
 import numpyninja.Base.BaseTest;
-import numpyninja.util.GenericClass;
 
 public class listnerclass extends BaseTest implements ITestListener {
 	
 	
 	public void beforeTest() throws IOException {
 		initDriver();
-	}	
+		
+			}	
 	
-	//}
-//	@Test
-//	public void f() throws IOException {
-//		takeSnapShot("SnapShot", driver);
-//}
-//
-//		
-//
-//	 
-// public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
-//		//TakesScreenshot scrShot=((TakeScreenshot)driver);
-//		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
-//		}
 
  
 	public void FailedScreenshot(String testMethodName) throws IOException {
 		
-
-File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-Date d = new Date();
-String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
-FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\" + testMethodName + "_" + TimeStamp
-		+ ".png"));
-
-		//File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		//try {
-			//FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo" + 
-			//testMethodName + "_" + TimeStamp + ".png"));
-		//} catch (IOException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
 		
+		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
+		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\Srcshot\\screenshot" + 
+	  			testMethodName + "_" + TimeStamp + ".png"));
+
+				
 }
- 
- 
- 
- 
- 
- 
  
  
     public void onTestFailure(ITestResult result)
@@ -81,16 +49,106 @@ catch(Exception e)
 	e.printStackTrace();
 }
     }
-    @AfterTest
-    public void aftertest() {
-    	driver.quit();
-    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //    @AfterTest
+//    public void aftertest() {
+//    	driver.quit();
+//    }
 
 
 
 
-
-//	    	String methodName=result.getName().toString().trim();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  //File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  //Date d = new Date();
+  //String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
+  //FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\srcshot\\screenshot" + testMethodName + "_" + TimeStamp
+//  		+ ".png"));
+    
+    
+    
+    
+    
+    //File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	
+  		//try {
+  			//FileUtils.copyFile(srcFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo" + 
+  			//testMethodName + "_" + TimeStamp + ".png"));
+  		//} catch (IOException e) {
+  			// TODO Auto-generated catch block
+  			//e.printStackTrace();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //	    	String methodName=result.getName().toString().trim();
 //	        ITestContext context = result.getTestContext();
 //	       WebDriver driver = (WebDriver)context.getAttribute("driver");
 //	       try {
@@ -136,7 +194,21 @@ catch(Exception e)
 	 
 	 
 	 
-	 
+//}
+//@Test
+//public void f() throws IOException {
+//	takeSnapShot("SnapShot", driver);
+//}
+//
+//	
+//
+// 
+//public static void takeSnapShot(String fileName, WebDriver driver) throws IOException {
+//	//TakesScreenshot scrShot=((TakeScreenshot)driver);
+//	File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//	FileUtils.copyFile(screenshotFile, new File(".//screenshot/screen3.png"));
+//	}
+
 	 
 	 
 	 

@@ -81,5 +81,6 @@ public class SignInTest extends BaseTest {
 
 @AfterClass
 public void logout() {
-	teardown();
+	driver.quit();
+	//teardown();
 }}

@@ -31,17 +31,17 @@ public class QueuePage {
 		 runButton.click();
         }
 	public void impusingcollectionsdeque(){
-		//driver.navigate().back();
+		driver.navigate().back();
 		WebElement collectionsdeque = driver.findElement(By.xpath("//a[@href='implementation-collections']"));
 		collectionsdeque.click();
         }
 	public void impusingarray(){
-		//driver.navigate().back();
+		driver.navigate().back();
 		WebElement arraylink = driver.findElement(By.xpath("//a[@href='Implementation-array']"));
 		arraylink.click();
         }
 	public void queueoperations(){
-		//driver.navigate().back();
+		driver.navigate().back();
 		WebElement queueoperations = driver.findElement(By.xpath("//a[@href='QueueOp']"));
 		queueoperations.click();
         }

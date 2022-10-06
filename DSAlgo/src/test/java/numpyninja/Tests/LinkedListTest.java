@@ -1,20 +1,13 @@
 package numpyninja.Tests;
-
-
-
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
-import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.LinkedListPage;
 import numpyninja.Pages.SignInPage;
-
 
 public class LinkedListTest extends BaseTest {
 	
@@ -25,16 +18,7 @@ public class LinkedListTest extends BaseTest {
         @BeforeClass
 		public void setUp() throws IOException  {
         	
-        	LandingPage landingPage = this.launchApplication();
-			landingPage.getStarted();	
-			
-		    home= new HomePage(driver);
-		    home.signinvalidation();
-	        
-		    SignInPage signIn =new SignInPage(driver);
-	        signIn.login(UserName, Password);
-	        signIn.clickLogin(); 
-	          
+        	    	home= new HomePage(driver);
 	        home.getstartedLinkedlistclick(); 
 	         
 	  }
@@ -107,7 +91,7 @@ public class LinkedListTest extends BaseTest {
     	
         	//SignIn.clicklogout();
     	
-        	teardown();
+        	//teardown();
     	}
          
 }

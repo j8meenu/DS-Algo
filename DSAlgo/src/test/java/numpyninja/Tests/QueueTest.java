@@ -1,94 +1,67 @@
 package numpyninja.Tests;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
-import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.QueuePage;
-import numpyninja.Pages.SignInPage;
+
 public class QueueTest extends BaseTest{
 	    
 	QueuePage objqueue;
-  
+	
       @BeforeClass
-      public void setUp() throws IOException  {
-  	    
-    	initDriver();
-  		driver.get(loginUrl);     
-	      SignInPage SignIn =new SignInPage(driver);
-	      SignIn.login(UserName, Password);
-	      SignIn.clickLogin();
-	      objqueue =new QueuePage(driver);
-
-		       objqueue.getstartedqueue();
-		      // home.getstartedQueueclick();
-      }
-    
-//      @BeforeClass
-//      public void setUp() throws IOException  {
-//  	    
-//       LandingPage landingPage = this.launchApplication();
-//   	   landingPage.getStarted();
-//   		
-//   	    HomePage home= new HomePage(driver);
-//   	    home.signinvalidation();
-//           
-//   	    SignInPage signIn =new SignInPage(driver);
-//           signIn.login(UserName, Password);
-//           signIn.clickLogin(); 
-//           
-//           home.getstartedQueueclick();
-//		       	
-//		}
+      public void setUp() throws IOException  {  	    
+    	  HomePage home= new HomePage(driver);
+		       home.getstartedQueueclick();
+		       	
+		}
 				@Test(priority=0)
 				public void impqueuebypython() {
+					objqueue = new QueuePage(driver);
 					objqueue.impqueuebypython();
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
-					driver.navigate().back();
 				}
 				@Test(priority=1)
 				public void impusingcollectionsdeque() {
+					objqueue = new QueuePage(driver);
 					objqueue.impusingcollectionsdeque();
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
-					driver.navigate().back();
 				}
 				@Test(priority=2)
 				public void impusingarray() {
+					objqueue = new QueuePage(driver);
 					objqueue.impusingarray();
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
-					driver.navigate().back();
 				}
 				@Test(priority=3)
 				public void queueoperations() {
+					objqueue = new QueuePage(driver);
 					objqueue.queueoperations();
 					objqueue.tryeditor();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
 					driver.navigate().back();
-					driver.navigate().back();
 				}
 				@Test(priority=4)
 				public void practicequestions() {
+					objqueue = new QueuePage(driver);
 					objqueue.queueoperations();
 					objqueue.practice();
 					String title = driver.getTitle();
 			       	assertTrue(true, title);
+			       	driver.navigate().back();
 			       	driver.navigate().back();
 			       	driver.navigate().back();
 					
@@ -96,6 +69,8 @@ public class QueueTest extends BaseTest{
 				
 				@AfterClass
 				public void logout() {
-					teardown();
+					/*SignInPage SignIn =new SignInPage(driver);
+					SignIn.clicklogout();
+					driver.quit();*/
 				}
 }

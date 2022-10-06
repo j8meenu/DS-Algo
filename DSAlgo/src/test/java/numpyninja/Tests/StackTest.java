@@ -9,8 +9,7 @@ import org.testng.annotations.Test;
 
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
-import numpyninja.Pages.LandingPage;
-import numpyninja.Pages.SignInPage;
+
 import numpyninja.Pages.StackPage;
 
 public class StackTest  extends BaseTest {
@@ -19,17 +18,7 @@ public class StackTest  extends BaseTest {
 
 	@BeforeClass
 	public void setUp() throws IOException  {
-    
-		   LandingPage landingPage = this.launchApplication();
-		   landingPage.getStarted();
-			
-		    HomePage home= new HomePage(driver);
-		    home.signinvalidation();
-	        
-		    SignInPage signIn =new SignInPage(driver);
-	        signIn.login(UserName, Password);
-	        signIn.clickLogin(); 
-	        
+    		 HomePage home= new HomePage(driver);
 	        home.getstartedStackclick();
   }
 	
@@ -65,12 +54,18 @@ public class StackTest  extends BaseTest {
           stackPage.practiceQuestionBtn();
           String title = driver.getTitle();
       	  Assert.assertEquals(title,"Practice Questions");
+      	driver.navigate().back();
+       	driver.navigate().back();
+       	driver.navigate().back();
+       	driver.navigate().back();
+       	driver.navigate().back();
+       
       }
       
       @AfterClass
 		public void logout() {
 		
-    	  teardown();
+    	  //teardown();
 		}
         
       

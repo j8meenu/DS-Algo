@@ -73,6 +73,7 @@ public void getstartedTreeclick() {
 }
 
 public void getstartedGraphclick() {
+	
 	graphGetstartedbtn.click();
 
 }
@@ -86,8 +87,7 @@ public RegisterPage registervalidation() {
 				registerbutton.click();
 				
 				return new RegisterPage(driver);
-				
-
+		
 }	
 
 

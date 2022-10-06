@@ -1,28 +1,17 @@
 package numpyninja.Tests;
 
-import static org.junit.Assert.assertEquals;
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Base.BaseTest;
-import numpyninja.Pages.DataStructurePage;
+import numpyninja.Pages.GraphPage;
 import numpyninja.Pages.HomePage;
 import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
-import numpyninja.Resources.listnerclass;
 @Listeners(numpyninja.Resources.listnerclass.class)
 public class HomeTest extends BaseTest {
 	
@@ -30,6 +19,7 @@ public class HomeTest extends BaseTest {
 	HomePage home;
 	LandingPage lp;
 	SignInPage SignIn;
+	GraphPage objGraph;
 	
 	@BeforeClass
 	public void beforetest() throws IOException {

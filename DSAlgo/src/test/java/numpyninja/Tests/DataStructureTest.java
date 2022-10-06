@@ -1,14 +1,11 @@
 package numpyninja.Tests;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.DataStructurePage;
 import numpyninja.Pages.HomePage;
@@ -37,26 +34,12 @@ public class DataStructureTest extends BaseTest {
         
         home.getstartedDatastructureclick();
      }	
-	/*
-	@Test(priority=0)
-	public void introDatastructure() {
-	home=new HomePage(driver);
-	home.signinvalidation();
-	SignIn=new SignInPage(driver);
-	SignIn.login(userName, password);
-	SignIn.clickLogin();
-	home.getstartedDatastructureclick();
-	String title = driver.getTitle();
-   	assertTrue(true, title);
-	}
-	*/
-	
-	
+		
 	@Test(priority=1)
 	public void TimeComplexity() {
 		
 		ds=new DataStructurePage(driver);
-		ds.TimeComplexityClick();
+		DataStructurePage.TimeComplexityClick();
 		String title = driver.getTitle();
        	assertTrue(true, title);
 	}
@@ -64,7 +47,7 @@ public class DataStructureTest extends BaseTest {
 	@Test(priority=2)
 	public void PracticeQuestion() {
 		ds=new DataStructurePage(driver);
-		ds.PracticeQuestionclick();
+		DataStructurePage.PracticeQuestionclick();
 		driver.navigate().back();
 		JavascriptExecutor js=(JavascriptExecutor)driver; 
 	js.executeScript("window.scrollBy(0,900)");
@@ -73,14 +56,14 @@ public class DataStructureTest extends BaseTest {
 	}
 @Test(priority=3)
 public void TryHere() {
-	ds.tryhereclick();
+	DataStructurePage.tryhereclick();
 	String title = driver.getTitle();
    	assertTrue(true, title);
 }
 
 @Test(priority=4)
 public void TryEditor() {
-	ds.TryEditorClick();
+	DataStructurePage.TryEditorClick();
 	driver.navigate().back();
 	driver.navigate().back();
 	driver.navigate().back();
@@ -91,7 +74,7 @@ public void TryEditor() {
 @AfterClass
 public void logout() {
 	
-	teardown();
+	//teardown();
 }
 
 }

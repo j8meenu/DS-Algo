@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.HomePage;
-import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.RegisterPage;
 
 public class ResisterTest extends BaseTest {
@@ -70,8 +69,8 @@ public class ResisterTest extends BaseTest {
         }  */
         @AfterClass
         public void logOut() {
-       
-        	teardown();
+       driver.quit();
+        	//teardown();
         }
 
 

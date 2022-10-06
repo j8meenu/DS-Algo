@@ -1,5 +1,4 @@
 package numpyninja.Tests;
-
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 import org.testng.annotations.AfterClass;
@@ -8,9 +7,7 @@ import org.testng.annotations.Test;
 import numpyninja.Base.BaseTest;
 import numpyninja.Pages.ArrayPage;
 import numpyninja.Pages.HomePage;
-import numpyninja.Pages.LandingPage;
 import numpyninja.Pages.SignInPage;
-
 
 public class ArrayTest extends BaseTest {
 	ArrayPage array;
@@ -19,30 +16,11 @@ public class ArrayTest extends BaseTest {
 	@BeforeClass
 	public void beforetest() throws IOException {
 		
-		LandingPage landingPage = this.launchApplication();
-		landingPage.getStarted();	
-		
-	    HomePage home= new HomePage(driver);
-	    home.signinvalidation();
-        
-	    SignInPage signIn =new SignInPage(driver);
-        signIn.login(UserName, Password);
-        signIn.clickLogin(); 
+		 HomePage home= new HomePage(driver);
         
         home.getStartedArrayClick();
 	}
-	/*
-	@Test(priority=0)
-	public void introArrayPage() {
-	home=new HomePage(driver);
-     home.signinvalidation();
-     SignIn=new SignInPage(driver);
-	SignIn.login(userName, password);
-	SignIn.clickLogin();
-home.getStartedArrayClick();
-String title = driver.getTitle();
-	assertTrue(true, title);
-} */
+	
 	
 	@Test(priority=1)
 	public void ArraysInPythonClick() {
@@ -53,12 +31,11 @@ String title = driver.getTitle();
 			String title = driver.getTitle();
 		   	assertTrue(true, title);	 
 		 }
-	
 		 
 
 	@Test(priority=2)
 	public void ArraysusinglistClick() {
-		 array=new ArrayPage(driver);
+		array=new ArrayPage(driver);
 		 array.Arraysusinglist();
 		 driver.navigate().back();
 			driver.navigate().back();	
@@ -137,7 +114,7 @@ String title = driver.getTitle();
 		 }
 	@AfterClass
 	public void logout() {
-		teardown();
+		//teardown();
 	}
 
 	}

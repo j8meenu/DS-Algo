@@ -1,20 +1,16 @@
 package numpyninja.Base;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Date;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import numpyninja.Pages.LandingPage;
+import numpyninja.Pages.SignInPage;
 import numpyninja.util.ReadConfig;
 
 public class BaseTest {
@@ -64,9 +60,18 @@ public class BaseTest {
 			landingPage.goTo();
 			return landingPage;
 		}
+		public SignInPage signinhome() throws IOException {
+			driver = initDriver();
+			SignInPage signIn =new SignInPage(driver);
+		signIn.login(UserName, Password);
+		 signIn.clickLogin(); 
+		 return signIn;
+		}
 		
 		public void teardown() {
-        	driver.quit();
+        	//driver.quit();
+			driver.navigate().back();
+			driver.navigate().back();
         }
 	
 }

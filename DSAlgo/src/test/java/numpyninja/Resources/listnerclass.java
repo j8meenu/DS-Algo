@@ -30,7 +30,7 @@ public class listnerclass extends BaseTest implements ITestListener {
 		File screenshotFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
 		String TimeStamp=d.toString().replace(":", "_").replace(" ", "_");
-		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\bv250\\gitrepository\\DS-Algo\\DSAlgo\\Srcshot\\screenshot" + 
+		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\rajes\\OneDrive\\Documents\\GitHub\\DS-Algo\\DSAlgo\\Srcshot\\screenshot" + 
 	  			testMethodName + "_" + TimeStamp + ".png"));
 
 				

@@ -8,6 +8,7 @@
           <include name="queueoperations"/>
           <include name="practicequestions"/>
           <include name="setUp"/>
+          <include name="impqueuebypython"/>
           <include name="impusingarray"/>
           <include name="impusingcollectionsdeque"/>
           <include name="logout"/>

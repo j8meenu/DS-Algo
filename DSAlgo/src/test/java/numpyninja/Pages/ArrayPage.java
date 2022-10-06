@@ -15,58 +15,58 @@ public class ArrayPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//div[@class='col'][2]//a[@class='align-self-end btn btn-lg btn-block btn-primary']")public static WebElement arraygetstartedbtn;
-	@FindBy(xpath="//a[text()='Arrays in Python']")public static WebElement arraysinpython;
-	@FindBy(xpath="//a[@class='btn btn-info']")public static WebElement tryherebutton;
-	@FindBy(xpath="//a[text()='Arrays Using List']")public static WebElement arraysusinglistbtn;
-	@FindBy(xpath="//a[@class='btn btn-info']")public static WebElement tryherebtn1;
-	@FindBy(xpath="//a[text()='Basic Operations in Lists']")public static WebElement basicoperationsbtn;
-	@FindBy(xpath="//a[@class='btn btn-info']")public static WebElement tryherebtn2;
-	@FindBy(xpath="//a[text()='Applications of Array']")public static WebElement applicationofarraysbtn;
-	@FindBy(xpath="//a[@class='btn btn-info']")public static WebElement tryherebtn3;
-	@FindBy(xpath="//a[text()='Practice Questions']")public static WebElement practicequestionstab;
-	@FindBy(xpath="//a[text()='Search the array']")public static WebElement searchthearray;
-	@FindBy(xpath="//a[text()='Max Consecutive Ones']")public static WebElement maxconsecutiveones;
-	@FindBy(xpath="//a[text()='Find Numbers with Even Number of Digits']")public static WebElement findnumbers;
-	@FindBy(xpath="//a[text()='Squares of  a Sorted Array']")public static WebElement squarestab;
-	@FindBy(xpath="//textarea[@tabindex='0']")public static WebElement codetextarea;
-	@FindBy(xpath="//button[@type='button']")public static WebElement RunBtn;
+	@FindBy(xpath="//div[@class='col'][2]//a[@class='align-self-end btn btn-lg btn-block btn-primary']") WebElement arraygetstartedbtn;
+	@FindBy(xpath="//a[text()='Arrays in Python']") WebElement arraysinpython;
+	@FindBy(xpath="//a[@class='btn btn-info']") WebElement tryherebutton;
+	@FindBy(xpath="//a[text()='Arrays Using List']") WebElement arraysusinglistbtn;
+	@FindBy(xpath="//a[@class='btn btn-info']") WebElement tryherebtn1;
+	@FindBy(xpath="//a[text()='Basic Operations in Lists']") WebElement basicoperationsbtn;
+	@FindBy(xpath="//a[@class='btn btn-info']") WebElement tryherebtn2;
+	@FindBy(xpath="//a[text()='Applications of Array']") WebElement applicationofarraysbtn;
+	@FindBy(xpath="//a[@class='btn btn-info']") WebElement tryherebtn3;
+	@FindBy(xpath="//a[text()='Practice Questions']") WebElement practicequestionstab;
+	@FindBy(xpath="//a[text()='Search the array']") WebElement searchthearray;
+	@FindBy(xpath="//a[text()='Max Consecutive Ones']") WebElement maxconsecutiveones;
+	@FindBy(xpath="//a[text()='Find Numbers with Even Number of Digits']") WebElement findnumbers;
+	@FindBy(xpath="//a[text()='Squares of  a Sorted Array']") WebElement squarestab;
+	@FindBy(xpath="//textarea[@tabindex='0']") WebElement codetextarea;
+	@FindBy(xpath="//button[@type='button']") WebElement RunBtn;
 	
-	public static void Arraygetstarted() {
+	public void Arraygetstarted() {
 		arraygetstartedbtn.click();
 	}
-public static void ArraysInPython() {
+public void ArraysInPython() {
 	arraysinpython.click();
 	tryherebutton.click();
 	codetextarea.sendKeys("print('Hello World')");
 	RunBtn.click();
 }
 
-public static void Arraysusinglist() {
+public void Arraysusinglist() {
 	arraysusinglistbtn.click();
 	tryherebtn1.click();
 	codetextarea.sendKeys("print('Hello World')");
 	RunBtn.click();
 }
-public static void Basicoperations() {
+public void Basicoperations() {
 	basicoperationsbtn.click();
 	tryherebtn2.click();
 	codetextarea.sendKeys("print('Hello World')");
 	RunBtn.click();
 }
-public static void Applicationofarrays() {
+public void Applicationofarrays() {
 	applicationofarraysbtn.click();
 	tryherebtn3.click();
 	codetextarea.sendKeys("print('Hello World')");
 	RunBtn.click();
 }
 
-public static void Practicequestions() {
+public void Practicequestions() {
 	practicequestionstab.click();
 	
 }
 
-public static void SearchTheArray() {
+public void SearchTheArray() {
 	searchthearray.click();
 	codetextarea.sendKeys(Keys.CONTROL + "a");
 	codetextarea.sendKeys(Keys.DELETE);
@@ -74,7 +74,7 @@ public static void SearchTheArray() {
 	RunBtn.click();
 }
 
-public static void MaxConsecutiveOnes() {
+public void MaxConsecutiveOnes() {
 	maxconsecutiveones.click();
 	codetextarea.sendKeys(Keys.CONTROL + "a");
 	codetextarea.sendKeys(Keys.DELETE);
@@ -82,7 +82,7 @@ public static void MaxConsecutiveOnes() {
 	RunBtn.click();
 }
 
-public static void FindNumbers() {
+public void FindNumbers() {
 	findnumbers.click();
 	codetextarea.sendKeys(Keys.CONTROL + "a");
 	codetextarea.sendKeys(Keys.DELETE);
@@ -90,7 +90,7 @@ public static void FindNumbers() {
 	RunBtn.click();
 }
 
-public static void SquaresTab() {
+public void SquaresTab() {
 	squarestab.click();
 	codetextarea.sendKeys(Keys.CONTROL + "a");
 	codetextarea.sendKeys(Keys.DELETE);
